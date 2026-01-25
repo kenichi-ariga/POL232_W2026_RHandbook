@@ -224,8 +224,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#conditional-means" id="toc-conditional-means" class="nav-link" data-scroll-target="#conditional-means"><span class="header-section-number">5.6.1</span> Conditional Means</a></li>
   <li><a href="#conditional-medians" id="toc-conditional-medians" class="nav-link" data-scroll-target="#conditional-medians"><span class="header-section-number">5.6.2</span> Conditional Medians</a></li>
-  <li><a href="#pipe-operator-for-sequantial-operations" id="toc-pipe-operator-for-sequantial-operations" class="nav-link" data-scroll-target="#pipe-operator-for-sequantial-operations"><span class="header-section-number">5.6.3</span> Pipe Operator (<code>|&gt;</code>) for Sequantial Operations</a></li>
   </ul></li>
+  <li><a href="#pipe-operator-for-sequantial-operations" id="toc-pipe-operator-for-sequantial-operations" class="nav-link" data-scroll-target="#pipe-operator-for-sequantial-operations"><span class="header-section-number">5.7</span> Pipe Operator (<code>|&gt;</code>) for Sequantial Operations</a></li>
   </ul>
 </nav>
     </div>
@@ -432,7 +432,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>You can also specify <span class="red-text">the colors of the mosaic tiles</span> by adding <strong>the <code>color</code> argument</strong>. Recall that you can look up <span class="red-text">the names of the colors used in R</span> online, for example, <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">here</a> and <a href="https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf">here</a>.</p>
+<p>You can also specify <span class="red-text">the colors of the mosaic tiles</span> by adding <strong>the <code>color</code> argument</strong>. Recall that you can look up <span class="red-text">the names of the colors used in R</span> online, for example, <a href="https://r-charts.com/colors/">here</a> and <a href="https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf">here</a>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="sc">~</span> percep_economy_cps <span class="sc">+</span> satisfied_fedgovt,</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">data =</span> ces2019,</span>
@@ -1149,8 +1149,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="pipe-operator-for-sequantial-operations" class="level3" data-number="5.6.3">
-<h3 data-number="5.6.3" class="anchored" data-anchor-id="pipe-operator-for-sequantial-operations"><span class="header-section-number">5.6.3</span> Pipe Operator (<code>|&gt;</code>) for Sequantial Operations</h3>
+</section>
+<section id="pipe-operator-for-sequantial-operations" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="pipe-operator-for-sequantial-operations"><span class="header-section-number">5.7</span> Pipe Operator (<code>|&gt;</code>) for Sequantial Operations</h2>
 <p><strong>The pipe operator</strong> (<code>|&gt;</code>) is convenient when we <span class="red-text">create R objects sequentially by applying different R functions in each step</span>. For example, in <a href="#sec-seq-op" class="quarto-xref"><span>Section 5.2.6</span></a>, we have edited the crosstab by creating R objects sequentially. For your reference, I have recreated the code below.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>  tab <span class="ot">&lt;-</span> <span class="fu">table</span>( ces2019<span class="sc">$</span>satisfied_fedgovt,   </span>
@@ -1246,7 +1247,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
-</section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
