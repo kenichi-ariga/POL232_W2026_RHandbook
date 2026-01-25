@@ -193,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#prepare-the-percep_economy_cps-variable" id="toc-prepare-the-percep_economy_cps-variable" class="nav-link" data-scroll-target="#prepare-the-percep_economy_cps-variable"><span class="header-section-number">5.1.1</span> Prepare the <code>percep_economy_cps</code> Variable</a></li>
   <li><a href="#draw-a-raw-mosaic-plot-mosaicplot" id="toc-draw-a-raw-mosaic-plot-mosaicplot" class="nav-link" data-scroll-target="#draw-a-raw-mosaic-plot-mosaicplot"><span class="header-section-number">5.1.2</span> Draw a Raw Mosaic Plot: <code>mosaicplot()</code></a></li>
   <li><a href="#edit-the-satisfied_fedgovt-variable" id="toc-edit-the-satisfied_fedgovt-variable" class="nav-link" data-scroll-target="#edit-the-satisfied_fedgovt-variable"><span class="header-section-number">5.1.3</span> Edit the <code>satisfied_fedgovt</code> Variable</a></li>
-  <li><a href="#draw-the-mosaic-plot-drawn-by-mosaicplot" id="toc-draw-the-mosaic-plot-drawn-by-mosaicplot" class="nav-link" data-scroll-target="#draw-the-mosaic-plot-drawn-by-mosaicplot"><span class="header-section-number">5.1.4</span> Draw the Mosaic Plot Drawn by <code>mosaicplot()</code></a></li>
+  <li><a href="#edit-the-mosaic-plot-drawn-by-mosaicplot" id="toc-edit-the-mosaic-plot-drawn-by-mosaicplot" class="nav-link" data-scroll-target="#edit-the-mosaic-plot-drawn-by-mosaicplot"><span class="header-section-number">5.1.4</span> Edit the Mosaic Plot Drawn by <code>mosaicplot()</code></a></li>
   </ul></li>
   <li><a href="#cross-tabulation" id="toc-cross-tabulation" class="nav-link" data-scroll-target="#cross-tabulation"><span class="header-section-number">5.2</span> Cross Tabulation</a>
   <ul class="collapse">
@@ -305,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Unfortunately, however, <strong>the <code>ggmosaic</code> package</strong> is currently not available. Therefore, I will introduce <strong>the <code>mosaicplot()</code> function</strong> this year. As we cannot use the functions to edit visualizations produced by <strong>the <code>ggplot()</code> function</strong> for the mosaic plot produced by <strong>the <code>mosaiplot()</code> function</strong>, I will also introduce <span class="red-text">several new functions to edit</span> <strong>this mosaic plot</strong>.</p>
 <p>Below is the <span class="red-text">syntax</span> for <span class="red-text">the minimum specification</span> for <strong>the <code>mosaicplot()</code> function</strong>. (<u>Don’t run the following code</u>, which is intended to show you the syntax only.)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="sc">~</span> independent_variable <span class="sc">+</span> dependent_varibla, </span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="sc">~</span> independent_variable <span class="sc">+</span> dependent_variable, </span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>                  <span class="co"># "~" followed by the name of independent variable </span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                  <span class="co">#            "+" name of dependent variable</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">data =</span> nama_of_data_frame </span>
@@ -372,10 +372,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!--     "Not At All", "Not Very", "Fairly", "Very"))  -->
 <!-- ``` -->
 </section>
-<section id="draw-the-mosaic-plot-drawn-by-mosaicplot" class="level3" data-number="5.1.4">
-<h3 data-number="5.1.4" class="anchored" data-anchor-id="draw-the-mosaic-plot-drawn-by-mosaicplot"><span class="header-section-number">5.1.4</span> Draw the Mosaic Plot Drawn by <code>mosaicplot()</code></h3>
-<p>Now I will introduce <span class="red-text">several arguments to edit</span> <strong>the mosaic plot</strong> produced by <strong>the <code>mosaicplot()</code> function</strong>. These arguments can be used in <strong>any default R graphic functions</strong> which can be used without loading an additional package — these default functions are also called <span class="red-text">base R functions</span>, but they don’t work in <strong>the <code>ggplot()</code> function</strong>.</p>
-<p>First, let’s change the plot title, which currently appears as “ces2019.” We can do this by specifying <strong>the <code>main</code> argument</strong> within <strong>the <code>mosaicplot()</code> function</strong>. Below I changed the plot title to “Economic Voting.”</p>
+<section id="edit-the-mosaic-plot-drawn-by-mosaicplot" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="edit-the-mosaic-plot-drawn-by-mosaicplot"><span class="header-section-number">5.1.4</span> Edit the Mosaic Plot Drawn by <code>mosaicplot()</code></h3>
+<p>Now I will introduce <span class="red-text">several arguments to edit</span> <strong>the mosaic plot</strong> produced by <strong>the <code>mosaicplot()</code> function</strong>. <span class="red-text">These arguments can be used in</span> <strong>any default R graphic functions</strong> which can be used without loading an additional package — these default functions are also called <span class="red-text">base R functions</span>. However, <span class="red-text">they don’t work with</span> <strong>the <code>ggplot()</code> function</strong>.</p>
+<p>First, let’s <span class="red-text">change the plot title</span>, which currently appears as “ces2019.” We can do this by specifying <strong>the <code>main</code> argument</strong> within <strong>the <code>mosaicplot()</code> function</strong>. Below I changed the plot title to “Economic Voting.”</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="sc">~</span> percep_economy_cps <span class="sc">+</span> satisfied_fedgovt,</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">data =</span> ces2019,</span>
@@ -388,7 +388,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>We can also remove the plot tile entirely by specifying an empty string for <strong>the <code>main</code> argument</strong>.</p>
+<p>We can also <span class="red-text">remove the plot tile</span> entirely by specifying an empty string for <strong>the <code>main</code> argument</strong>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="sc">~</span> percep_economy_cps <span class="sc">+</span> satisfied_fedgovt,</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">data =</span> ces2019,</span>
@@ -401,7 +401,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Also change the variable labels on the horizontal and vertical axes. We can do this by specifying <strong>the <code>xlab</code> argument</strong> for the horizontal axis and <strong>the <code>ylab</code> argument</strong> for the vertical axis in <strong>the <code>mosaicplot()</code> function</strong>.</p>
+<p>Also <span class="red-text">change the variable labels on the horizontal and vertical axes</span>. We can do this by specifying <strong>the <code>xlab</code> argument</strong> for the horizontal axis and <strong>the <code>ylab</code> argument</strong> for the vertical axis in <strong>the <code>mosaicplot()</code> function</strong>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="sc">~</span> percep_economy_cps <span class="sc">+</span> satisfied_fedgovt,</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">data =</span> ces2019,</span>
@@ -416,7 +416,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>It may be easy to read the categories on the vertical axis if they are presented horizontally. We can do this by specifying <strong>the <code>las</code> argument</strong> at <code>1</code>.</p>
+<p><span class="red-text">The categories on the vertical axis</span> may be easier to read if they are <span class="red-text">presented horizontally</span>. We can do this by specifying <strong>the <code>las</code> argument</strong> at <code>1</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="sc">~</span> percep_economy_cps <span class="sc">+</span> satisfied_fedgovt,</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">data =</span> ces2019,</span>
