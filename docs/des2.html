@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Descriptive Statistics (2) – POL232 R Handbook (W2025)</title>
+<title>4&nbsp; Descriptive Statistics (2) – POL232 R Handbook (W2026)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">POL232 R Handbook (W2025)</a> 
+      <a href="./">POL232 R Handbook (W2026)</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -183,24 +183,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="./simp_linreg.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Simple Linear Regression</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./multi_linreg.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Multiple Linear Regression</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./linreg_inf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Statistical Inference for Linear Regression</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./subsig.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Substantive Significance</span></span></a>
   </div>
 </li>
     </ul>
@@ -269,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Launch <strong>RStudio</strong>.</p></li>
 <li><p>Load <code>POL232.RData</code> into your current <strong>R</strong> session.</p></li>
 <li><p>Prepare an <strong>R Script</strong> to save all your work in this chapter. I suggest you name it “<code>POL232_Lab#_YourLastName.R</code>” in which <code>#</code> is the number of the current lab session.</p></li>
-<li><p>You also need to load <code>tidyverse</code> package into your current <strong>R</strong> session (<span class="quarto-unresolved-ref">?sec-load-packages</span>).</p></li>
+<li><p>You also need to load <code>tidyverse</code> package into your current <strong>R</strong> session (<a href="setup.html#sec-load-packages" class="quarto-xref"><span>Section 1.4.2</span></a>).</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -281,7 +263,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>I suggest you <span class="red-text">actually write</span> <strong>the R functions</strong> used below in your <strong>R script</strong> instead of copying and pasting them. By <span class="red-text">actually writing them</span> and <span class="red-text">occasionally making mistakes and correcting them</span>, you can get used to how <strong>RStudio</strong> works more quickly and effectively.</p></li>
 <li><p>If you <span class="red-text">simply copy and paste</span> them, you will <span class="red-text">not learn much</span> about <strong>RStudio</strong> and will <span class="red-text">not get used to it</span>.</p></li>
-<li><p>In your <strong>R script</strong>, leave <span class="red-text">sufficient descriptions</span> of the functions after <strong>the <code>#</code> sign</strong> (see <span class="quarto-unresolved-ref">?sec-r-comments</span>) so that you can use your <strong>R script</strong> later <span class="red-text">as your reference</span> when you conduct analysis using these <strong>R functions</strong>.</p></li>
+<li><p>In your <strong>R script</strong>, leave <span class="red-text">sufficient descriptions</span> of the functions after <strong>the <code>#</code> sign</strong> (see <a href="basic.html#sec-r-comments" class="quarto-xref"><span>Section 2.2.2</span></a>) so that you can use your <strong>R script</strong> later <span class="red-text">as your reference</span> when you conduct analysis using these <strong>R functions</strong>.</p></li>
 <li><p>These descriptions are <span class="red-text">notes for yourself</span>. Organize these descriptions/notes so that they are <span class="red-text">convenient for your futur use</span>.</p></li>
 </ul>
 </section>
@@ -404,7 +386,7 @@ $ satisfied_dem_cps &lt;fct&gt; (3) Not very satisfied, (2) Fairly satisfied, (1
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">percep_economy_cps_copy =</span> percep_economy_cps)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong>The first argument</strong> of <strong>the <code>mutate()</code> function</strong> is <span class="red-text">the data frame to which we want to add a new variable</span>. Its <strong>second argument</strong> specifies <span class="red-text">the content of this new variable</span> by <code>name-of-new-variable = its-content</code>. In the above code, it is specified that the new variable <code>percep_economy_cps_copy</code> equals <code>percep_economy_cps</code>.</p>
-<p>The right hand side of <code>&lt;-</code> (the assignment operator<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, see <span class="quarto-unresolved-ref">?sec-assignment-operator</span>) in the above code mutated the data frame <code>ces2019</code> by adding a new variable <code>percep_economy_cps_copy</code>. Then, this new, mutated data frame is assigned to <code>ces2019</code> on the left hand side of <code>&lt;-</code>. In other words, <code>ces2019</code> is now updated with an additional variable <code>percep_economy_cps_copy</code>.</p>
+<p>The right hand side of <code>&lt;-</code> (the assignment operator<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, see <a href="basic.html#sec-assignment-operator" class="quarto-xref"><span>Section 2.3.3</span></a>) in the above code mutated the data frame <code>ces2019</code> by adding a new variable <code>percep_economy_cps_copy</code>. Then, this new, mutated data frame is assigned to <code>ces2019</code> on the left hand side of <code>&lt;-</code>. In other words, <code>ces2019</code> is now updated with an additional variable <code>percep_economy_cps_copy</code>.</p>
 <p>Check if the new variable <code>percep_economy_cps_copy</code> is added to your data frame using <strong>the <code>glimpse()</code> function</strong>. If you apply <strong>the <code>glimpse()</code> function</strong> to <code>ces2019</code>, now you can see this new variable <code>percep_economy_cps_copy</code> <span class="red-text">at the end of the data frame</span>. For brevity, I show only <code>percep_economy_cps</code> and <code>percep_economy_cps_copy</code> below. They are exactly the same.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">glimpse</span>(ces2019)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

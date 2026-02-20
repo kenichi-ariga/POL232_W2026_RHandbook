@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Descriptive Statistics (1) – POL232 R Handbook (W2025)</title>
+<title>3&nbsp; Descriptive Statistics (1) – POL232 R Handbook (W2026)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">POL232 R Handbook (W2025)</a> 
+      <a href="./">POL232 R Handbook (W2026)</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -185,24 +185,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Simple Linear Regression</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./multi_linreg.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Multiple Linear Regression</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./linreg_inf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Statistical Inference for Linear Regression</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./subsig.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Substantive Significance</span></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -216,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#sec-preparation" id="toc-sec-preparation" class="nav-link active" data-scroll-target="#sec-preparation"><span class="header-section-number">3.1</span> Preparation</a>
   <ul class="collapse">
   <li><a href="#launch-rstudio" id="toc-launch-rstudio" class="nav-link" data-scroll-target="#launch-rstudio"><span class="header-section-number">3.1.1</span> Launch RStudio</a></li>
-  <li><a href="#load-pol232..rdata" id="toc-load-pol232..rdata" class="nav-link" data-scroll-target="#load-pol232..rdata"><span class="header-section-number">3.1.2</span> Load POL232..RData</a></li>
+  <li><a href="#load-pol232.rdata" id="toc-load-pol232.rdata" class="nav-link" data-scroll-target="#load-pol232.rdata"><span class="header-section-number">3.1.2</span> Load POL232.RData</a></li>
   <li><a href="#prepare-r-script" id="toc-prepare-r-script" class="nav-link" data-scroll-target="#prepare-r-script"><span class="header-section-number">3.1.3</span> Prepare R Script</a></li>
   <li><a href="#load-packages" id="toc-load-packages" class="nav-link" data-scroll-target="#load-packages"><span class="header-section-number">3.1.4</span> Load Packages</a></li>
   <li><a href="#sec-actually-write-rscript" id="toc-sec-actually-write-rscript" class="nav-link" data-scroll-target="#sec-actually-write-rscript"><span class="header-section-number">3.1.5</span> Actually Write R Functions</a></li>
@@ -229,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#values-and-tick-marks-appearing-on-the-x-and-y-axes-scale_x_continuous-scale_y_continuous" id="toc-values-and-tick-marks-appearing-on-the-x-and-y-axes-scale_x_continuous-scale_y_continuous" class="nav-link" data-scroll-target="#values-and-tick-marks-appearing-on-the-x-and-y-axes-scale_x_continuous-scale_y_continuous"><span class="header-section-number">3.2.4</span> Values and Tick Marks Appearing on the X and Y Axes: <code>scale_x_continuous()</code>, <code>scale_y_continuous()</code></a></li>
   <li><a href="#range-of-values-at-the-x-and-y-axes-coord_cartesian" id="toc-range-of-values-at-the-x-and-y-axes-coord_cartesian" class="nav-link" data-scroll-target="#range-of-values-at-the-x-and-y-axes-coord_cartesian"><span class="header-section-number">3.2.5</span> Range of Values at the X and Y Axes: <code>coord_cartesian()</code></a></li>
   </ul></li>
-  <li><a href="#erase-all-histograms-produced" id="toc-erase-all-histograms-produced" class="nav-link" data-scroll-target="#erase-all-histograms-produced"><span class="header-section-number">3.3</span> Erase All Histograms Produced</a></li>
+  <li><a href="#erase-all-histograms-produced-dev.off" id="toc-erase-all-histograms-produced-dev.off" class="nav-link" data-scroll-target="#erase-all-histograms-produced-dev.off"><span class="header-section-number">3.3</span> Erase All Histograms Produced: <code>dev.off()</code></a></li>
   <li><a href="#sec-assign-hist-new-object" id="toc-sec-assign-hist-new-object" class="nav-link" data-scroll-target="#sec-assign-hist-new-object"><span class="header-section-number">3.4</span> Assign Histogram to New Object and Print: <code>print()</code></a></li>
   <li><a href="#mean-and-median" id="toc-mean-and-median" class="nav-link" data-scroll-target="#mean-and-median"><span class="header-section-number">3.5</span> Mean and Median</a>
   <ul class="collapse">
@@ -267,6 +249,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p>Before working on this chapter, you should have completed <a href="basic.html" class="quarto-xref"><span>Chapter 2</span></a> and read <a href="setup.html#sec-rpackages" class="quarto-xref"><span>Section 1.4</span></a>. If you haven’t, please go back to those chapters, finish them, and then return here.</p>
 <section id="sec-preparation" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="sec-preparation"><span class="header-section-number">3.1</span> Preparation</h2>
 <p><strong>Before you start</strong> working on this chapter, you need to do the following.</p>
@@ -274,13 +257,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="launch-rstudio"><span class="header-section-number">3.1.1</span> Launch RStudio</h3>
 <ul>
 <li><p>Launch <strong>RStudio</strong>. Recall that you <span class="red-text">don’t need to launch</span> <strong>R</strong> because <strong>RStudio</strong> quietly opens <strong>R</strong> behind its GUI.</p></li>
-<li><p>If you use <strong>RStudio</strong> on <strong>JupyterHub</strong> and don’t remember how to use it, see <span class="quarto-unresolved-ref">?sec-jupyterhub</span>.</p></li>
+<li><p>If you use <strong>RStudio</strong> on <strong>JupyterHub</strong> and don’t remember how to use it, see <a href="setup.html#sec-jupyterhub" class="quarto-xref"><span>Section 1.2</span></a>.</p></li>
 </ul>
 </section>
-<section id="load-pol232..rdata" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="load-pol232..rdata"><span class="header-section-number">3.1.2</span> Load POL232..RData</h3>
+<section id="load-pol232.rdata" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="load-pol232.rdata"><span class="header-section-number">3.1.2</span> Load POL232.RData</h3>
 <ul>
-<li><p>Make sure you load <code>POL232.RData</code> into your current <strong>R</strong> session. If you forget how to load <code>POL232.RData</code> into your current <strong>R</strong> session, see <span class="quarto-unresolved-ref">?sec-load-dataset</span>.</p></li>
+<li><p>Make sure you load <code>POL232.RData</code> into your current <strong>R</strong> session. If you forget how to load <code>POL232.RData</code> into your current <strong>R</strong> session, see <a href="basic.html#sec-load-dataset" class="quarto-xref"><span>Section 2.1.3</span></a>.</p></li>
 <li><p>If you use <strong>RStudio</strong> on <strong>JupyterHub</strong> or your own computer, you are likely to have already downloaded and stored <code>POL232.RData</code> in your local folder either on your <strong>JupyterHub</strong> account or your own computer.</p></li>
 <li><p>However, if you use <strong>RStudio</strong> on <span class="red-text">a lab computer</span> in <strong>SS 561</strong>, you <span class="red-text">first need to download</span> <code>POL232.RData</code> from <strong>the class Quercus site</strong> because everything you saved on the lab computer is gone once you logged out from it.</p></li>
 </ul>
@@ -288,21 +271,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="prepare-r-script" class="level3" data-number="3.1.3">
 <h3 data-number="3.1.3" class="anchored" data-anchor-id="prepare-r-script"><span class="header-section-number">3.1.3</span> Prepare R Script</h3>
 <ul>
-<li><p>I suggest you write everything you do in <strong>RStudio</strong> in <strong>an R script</strong> and run <strong>R functions</strong> from within <strong>the R script</strong>. If you need a refresher for <strong>R script</strong>, read <span class="quarto-unresolved-ref">?sec-rscript</span> and <span class="quarto-unresolved-ref">?sec-write-rscript</span>.</p></li>
-<li><p>For the current purpose, start a new <strong>R script</strong> and name it “<code>POL232_Lab#_YourLastName.R</code>” in which <code>#</code> is the number of the current lab session (e.g., <code>POL232_Lab2_YourLastName.R</code>, <code>POL232_Lab3_YourLastName.R</code>). See <span class="quarto-unresolved-ref">?sec-new-rscript</span> for how to start a new <strong>R script</strong>.</p></li>
+<li><p>I suggest you write everything you do in <strong>RStudio</strong> in <strong>an R script</strong> and run <strong>R functions</strong> from within <strong>the R script</strong>. If you need a refresher for <strong>R script</strong>, read <a href="basic.html#sec-rscript" class="quarto-xref"><span>Section 2.2</span></a> and <a href="basic.html#sec-write-rscript" class="quarto-xref"><span>Section 2.3</span></a>.</p></li>
+<li><p>For the current purpose, start a new <strong>R script</strong> and name it “<code>POL232_Lab#_YourLastName.R</code>” in which <code>#</code> is the number of the current lab session (e.g., <code>POL232_Lab2_YourLastName.R</code>, <code>POL232_Lab3_YourLastName.R</code>). See <a href="basic.html#sec-new-rscript" class="quarto-xref"><span>Section 2.3.1</span></a> for how to start a new <strong>R script</strong>.</p></li>
 </ul>
 </section>
 <section id="load-packages" class="level3" data-number="3.1.4">
 <h3 data-number="3.1.4" class="anchored" data-anchor-id="load-packages"><span class="header-section-number">3.1.4</span> Load Packages</h3>
 <ul>
-<li>For the current chapter, you also need to load <code>tidyverse</code> package into your current <strong>R</strong> session (<span class="quarto-unresolved-ref">?sec-load-packages</span>).</li>
+<li>For the current chapter, you also need to load <code>tidyverse</code> package into your current <strong>R</strong> session (<a href="setup.html#sec-load-packages" class="quarto-xref"><span>Section 1.4.2</span></a>).</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>If you don’t know about or forget about <strong>R packages</strong>, read <span class="quarto-unresolved-ref">?sec-rpackages</span>.</li>
-<li>If <code>library(tidyverse)</code> returns an error message suggesting <code>there is no package called 'tidyverse'</code>, this means that <code>tidyverse</code> is not installed on your computer. In this case, you first need to install it. See <span class="quarto-unresolved-ref">?sec-install-packages</span> for how to dowonload and install <strong>R packages</strong>.</li>
+<li>If you don’t know about or forget about <strong>R packages</strong>, read <a href="setup.html#sec-rpackages" class="quarto-xref"><span>Section 1.4</span></a>.</li>
+<li>If <code>library(tidyverse)</code> returns an error message suggesting <code>there is no package called 'tidyverse'</code>, this means that <code>tidyverse</code> is not installed on your computer. In this case, you first need to install it. See <a href="setup.html#sec-install-packages" class="quarto-xref"><span>Section 1.4.1</span></a> for how to dowonload and install <strong>R packages</strong>.</li>
 </ul>
 </section>
 <section id="sec-actually-write-rscript" class="level3" data-number="3.1.5">
@@ -310,7 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><p>I suggest you <span class="red-text">actually write</span> <strong>the R functions</strong> used below in your <strong>R script</strong> instead of copying and pasting them. By <span class="red-text">actually writing them</span> and <span class="red-text">occasionally making mistakes and correcting them</span>, you can get used to how <strong>RStudio</strong> works more quickly and effectively.</p></li>
 <li><p>If you <span class="red-text">simply copy and paste</span> them, you will <span class="red-text">not learn much</span> about <strong>RStudio</strong> and will <span class="red-text">not get used to it</span>.</p></li>
-<li><p>In your <strong>R script</strong>, leave <span class="red-text">sufficient descriptions</span> of the functions after <strong>the <code>#</code> sign</strong> (see <span class="quarto-unresolved-ref">?sec-r-comments</span>) so that you can use your <strong>R script</strong> later <span class="red-text">as your reference</span> when you conduct analysis using these <strong>R functions</strong>.</p></li>
+<li><p>In your <strong>R script</strong>, leave <span class="red-text">sufficient descriptions</span> of the functions after <strong>the <code>#</code> sign</strong> (see <a href="basic.html#sec-r-comments" class="quarto-xref"><span>Section 2.2.2</span></a>) so that you can use your <strong>R script</strong> later <span class="red-text">as your reference</span> when you conduct analysis using these <strong>R functions</strong>.</p></li>
 <li><p>These descriptions are <span class="red-text">notes for yourself</span>. Organize these descriptions/notes so that they are <span class="red-text">convenient for your futur use</span>.</p></li>
 </ul>
 </section>
@@ -328,7 +311,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In summary, <strong>the <code>ggplot</code> function tells</strong> <strong>R</strong> <span class="red-text">which variable</span> from <span class="red-text">which data frame</span> we want to visualize.</p>
 <p>Then, <strong>the <code>ggplot</code> function</strong> should be followed by <strong>the <code>geom_histogram()</code> function</strong> connected by <strong>a plus sign (<code>+</code>)</strong>. We may also specify arguments for <strong>the <code>geom_histogram()</code> function</strong>, but it still works without any arguments.</p>
 <p>Let’s try this function. There are <strong>two Trudeau thermometers</strong> in <code>ces2019</code>: the one asked during the election campaign, <code>truedau_therm_cps</code>, and the other asked after the election, <code>truedau_therm_pes</code>. Here we use the one asked during the campaign, <code>truedeau_therm_cps</code>.</p>
-<p>Run the following function — in particular, write it in your <strong>R script</strong> and run it from there. See <span class="quarto-unresolved-ref">?sec-execute-rscript</span> for how ti execute <strong>R functions</strong> from your <strong>R script</strong>.</p>
+<p>Run the following function — in particular, write it in your <strong>R script</strong> and run it from there. See <a href="basic.html#sec-execute-rscript" class="quarto-xref"><span>Section 2.2.1</span></a> for how to execute <strong>R functions</strong> from your <strong>R script</strong>.</p>
 <p>Then, <strong>a histogram</strong> will appear in the <code>Plots</code> tab at the lower right pane.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(ces2019, <span class="fu">aes</span>(trudeau_therm_cps)) <span class="sc">+</span></span>
@@ -384,7 +367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="color-of-bins-fill-color" class="level3" data-number="3.2.2">
 <h3 data-number="3.2.2" class="anchored" data-anchor-id="color-of-bins-fill-color"><span class="header-section-number">3.2.2</span> Color of Bins: <code>fill</code>, <code>color</code></h3>
-<p>Suppose you want to change <span class="red-text">the color of the bins</span>. We can specify <strong>the <code>fill</code> argument</strong> in <strong>the <code>geom_histogram</code> function</strong> as below. You may specify <span class="red-text">the name of the color</span> you want. You can find the color names used in R online, <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">here</a> and <a href="https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf">here</a>, for example.</p>
+<p>Suppose you want to change <span class="red-text">the color of the bins</span>. We can specify <strong>the <code>fill</code> argument</strong> in <strong>the <code>geom_histogram</code> function</strong> as below. You may specify <span class="red-text">the name of the color</span> you want. You can find the color names used in R online, <a href="https://r-charts.com/colors/">here</a> and <a href="https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf">here</a>, for example.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(ces2019, <span class="fu">aes</span>(trudeau_therm_cps)) <span class="sc">+</span> </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">boundary=</span><span class="dv">0</span>, <span class="at">binwidth =</span> <span class="dv">10</span>, <span class="at">fill =</span> <span class="st">"palegreen"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -483,7 +466,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="range-of-values-at-the-x-and-y-axes-coord_cartesian" class="level3" data-number="3.2.5">
 <h3 data-number="3.2.5" class="anchored" data-anchor-id="range-of-values-at-the-x-and-y-axes-coord_cartesian"><span class="header-section-number">3.2.5</span> Range of Values at the X and Y Axes: <code>coord_cartesian()</code></h3>
-<p>We can also change <span class="red-text">the range of values appearing on both X and Y axes</span> by adding <strong>the <code>coord_cartesian()</code> function</strong> with <strong>the <code>xlim</code> and <code>ylim</code> arguments</strong>, respectively. In the code below at the last line, I added <code>coord_cartesian(ylim = c(0,1200))</code> to change <span class="red-text">the range of values on the Y-axis</span> to <code>0</code> from <code>1200</code>. Accordingly, I also changed the ending value of <strong>the <code>breaks</code> argument</strong> in <strong>the <code>scale_y_continuous</code> function</strong> to <code>1200</code> (the second to the last line).</p>
+<p>We can also change <span class="red-text">the range of values appearing on both X and Y axes</span> by adding <strong>the <code>coord_cartesian()</code> function</strong> with <strong>the <code>xlim</code> and <code>ylim</code> arguments</strong>, respectively. In the code below at the last line, I added <code>coord_cartesian(ylim = c(0,1200))</code> to change <span class="red-text">the range of values on the Y-axis</span> to the range between <code>0</code> and <code>1200</code>. Accordingly, I also changed the ending value of <strong>the <code>breaks</code> argument</strong> in <strong>the <code>scale_y_continuous</code> function</strong> to <code>1200</code> (the second to the last line).</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(ces2019, <span class="fu">aes</span>(trudeau_therm_cps)) <span class="sc">+</span> </span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">boundary=</span><span class="dv">0</span>, <span class="at">binwidth =</span> <span class="dv">10</span>, <span class="at">fill =</span> <span class="st">"palegreen"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
@@ -522,8 +505,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Now you can draw a pretty nice histogram for the variable of your interest. <!-- We can also control many other features of the appearance of the histogram by additional functions and arguments to **the `ggplot()` function**. --></p>
 </section>
 </section>
-<section id="erase-all-histograms-produced" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="erase-all-histograms-produced"><span class="header-section-number">3.3</span> Erase All Histograms Produced</h2>
+<section id="erase-all-histograms-produced-dev.off" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="erase-all-histograms-produced-dev.off"><span class="header-section-number">3.3</span> Erase All Histograms Produced: <code>dev.off()</code></h2>
 <p>If you want to erase all the histograms you drew on the <code>Plots</code> tab on the lower right pane, you can delete all of them by using the <code>dev.off()</code> function without arguments.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dev.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -636,7 +619,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="add-texts-to-histogram-annotatetext" class="level2" data-number="3.7">
 <h2 data-number="3.7" class="anchored" data-anchor-id="add-texts-to-histogram-annotatetext"><span class="header-section-number">3.7</span> Add Texts to Histogram: <code>annotate("text")</code></h2>
-<p>We can also <span class="red-text">add texts</span> to <strong>a histogram</strong> with <strong>the <code>annotate()</code> function</strong>. This function <span class="red-text">annotates a histogram with several different elements</span>, one of which is <span class="red-text">texts</span>. To add texts to our histogram, we specify <strong>the first argument</strong> of <strong>the <code>annotate()</code> function</strong> as <strong><code>"text"</code></strong>. The function also takes <strong>the <code>x</code> and <code>y</code> arguments</strong>, which specifies <span class="red-text">the location of the texts</span>, and <strong>the <code>label</code> argument</strong>, which specifies <span class="red-text">the content of the texts</span> we want to add. The values of <strong>the <code>x</code> and <code>y</code> arguments</strong> are from <span class="red-text">the values of the Y-axis (the vertical axis) and the X-axis (the horizontal axis)</span> of <strong>the histogram</strong> we have drawn. Recall that in our histogram about the Justin Trudeau thermometer variable, the values of the Y-axis range from <code>0</code> to <code>1200</code> and those of the X-axis range from <code>0</code> to <code>100</code>. Based on these values, <strong>the <code>x</code> and <code>y</code> arguments</strong> determine <span class="red-text">the location of the center of the texts</span>. I also added <strong>the <code>color</code> argument</strong> to specify <span class="red-text">the text color</span>.</p>
+<p>We can also <span class="red-text">add texts</span> to <strong>a histogram</strong> with <strong>the <code>annotate()</code> function</strong>. This function <span class="red-text">annotates a histogram with several different elements</span>, one of which is <span class="red-text">texts</span>. To add texts to our histogram, we specify <strong>the first argument</strong> of <strong>the <code>annotate()</code> function</strong> as <strong><code>"text"</code></strong>. The function also takes <strong>the <code>x</code> and <code>y</code> arguments</strong>, which specifies <span class="red-text">the location of the texts</span>, and <strong>the <code>label</code> argument</strong>, which specifies <span class="red-text">the content of the texts</span> we want to add. The values of <strong>the <code>x</code> and <code>y</code> arguments</strong> are from <span class="red-text">the values of the X-axis (the horizontal axis) and the Y-axis (the vertical axis)</span> of <strong>the histogram</strong> we have drawn. Recall that in our histogram about the Justin Trudeau thermometer variable, the values of the Y-axis range from <code>0</code> to <code>1200</code> and those of the X-axis range from <code>0</code> to <code>100</code>. Based on these values, <strong>the <code>x</code> and <code>y</code> arguments</strong> determine <span class="red-text">the location of the center of the texts</span>. I also added <strong>the <code>color</code> argument</strong> to specify <span class="red-text">the text color</span>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>  hist_trudeau3 <span class="ot">&lt;-</span> hist_trudeau2 <span class="sc">+</span>   </span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">80</span>, <span class="at">y =</span> <span class="dv">1100</span>, <span class="at">label =</span> <span class="st">"Mean = 43.72"</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
