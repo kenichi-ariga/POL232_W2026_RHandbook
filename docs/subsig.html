@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Substantive Significance – POL232 R Handbook (W2025)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./linreg_inf.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./subsig.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Substantive Significance</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">POL232 R Handbook (W2025)</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Setting Up R &amp; RStudio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basic Use of RStudio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./des1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Descriptive Statistics (1)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./des2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Descriptive Statistics (2)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bivariate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Bivariate Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./simp_linreg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Simple Linear Regression</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./multi_linreg.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Multiple Linear Regression</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./linreg_inf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Statistical Inference for Linear Regression</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./subsig.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Substantive Significance</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation"><span class="header-section-number">9.1</span> Preparation</a>
+  <ul class="collapse">
+  <li><a href="#prepare-variables" id="toc-prepare-variables" class="nav-link" data-scroll-target="#prepare-variables"><span class="header-section-number">9.1.1</span> Prepare Variables</a></li>
+  <li><a href="#prepare-new-data-frame" id="toc-prepare-new-data-frame" class="nav-link" data-scroll-target="#prepare-new-data-frame"><span class="header-section-number">9.1.2</span> Prepare New Data Frame</a></li>
+  <li><a href="#sec-subsig-ex-model" id="toc-sec-subsig-ex-model" class="nav-link" data-scroll-target="#sec-subsig-ex-model"><span class="header-section-number">9.1.3</span> Estimate Example Model</a></li>
+  </ul></li>
+  <li><a href="#sec-subsig-section" id="toc-sec-subsig-section" class="nav-link" data-scroll-target="#sec-subsig-section"><span class="header-section-number">9.2</span> Substantive Significance</a>
+  <ul class="collapse">
+  <li><a href="#basic-idea" id="toc-basic-idea" class="nav-link" data-scroll-target="#basic-idea"><span class="header-section-number">9.2.1</span> Basic Idea</a></li>
+  <li><a href="#estimation-by-the-emmeans-package" id="toc-estimation-by-the-emmeans-package" class="nav-link" data-scroll-target="#estimation-by-the-emmeans-package"><span class="header-section-number">9.2.2</span> Estimation by the <code>emmeans()</code> Package</a></li>
+  <li><a href="#sec-subig-est-eyx" id="toc-sec-subig-est-eyx" class="nav-link" data-scroll-target="#sec-subig-est-eyx"><span class="header-section-number">9.2.3</span> Estimate <span class="math inline">\(E(Y|X,Z^+)\)</span>: <code>emmeans()</code></a></li>
+  <li><a href="#sec-subig-est-diff" id="toc-sec-subig-est-diff" class="nav-link" data-scroll-target="#sec-subig-est-diff"><span class="header-section-number">9.2.4</span> Statistical Inference for <em>Difference</em> in <span class="math inline">\(E(Y|X,Z^+)\)</span>: <code>contrast()</code></a></li>
+  <li><a href="#sec-subig-arg" id="toc-sec-subig-arg" class="nav-link" data-scroll-target="#sec-subig-arg"><span class="header-section-number">9.2.5</span> Making Argument for Substantive Significance</a></li>
+  </ul></li>
+  <li><a href="#with-different-types-of-independent-variable-x" id="toc-with-different-types-of-independent-variable-x" class="nav-link" data-scroll-target="#with-different-types-of-independent-variable-x"><span class="header-section-number">9.3</span> With Different Types of Independent Variable <span class="math inline">\(X\)</span></a>
+  <ul class="collapse">
+  <li><a href="#ordinal-categorical-variable" id="toc-ordinal-categorical-variable" class="nav-link" data-scroll-target="#ordinal-categorical-variable"><span class="header-section-number">9.3.1</span> Ordinal Categorical Variable</a></li>
+  <li><a href="#sec-subsig-quant" id="toc-sec-subsig-quant" class="nav-link" data-scroll-target="#sec-subsig-quant"><span class="header-section-number">9.3.2</span> Quantitative Variable (<code>numeric</code>)</a></li>
+  <li><a href="#dummy-variable-logical" id="toc-dummy-variable-logical" class="nav-link" data-scroll-target="#dummy-variable-logical"><span class="header-section-number">9.3.3</span> Dummy Variable (<code>logical</code>)</a></li>
+  <li><a href="#sec-subsig-nominal" id="toc-sec-subsig-nominal" class="nav-link" data-scroll-target="#sec-subsig-nominal"><span class="header-section-number">9.3.4</span> Nominal Categorical Variable (<code>factor</code>)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-subsig" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Substantive Significance</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Before you start</strong> working on this chapter, you need to do the following. If you need a help for each step, see <a href="des1.html#sec-preparation" class="quarto-xref"><span>Section 3.1</span></a>.</p>
+<ul>
+<li><p>Launch <strong>RStudio</strong>.</p></li>
+<li><p>Load <code>POL232.RData</code> into your current <strong>R</strong> session.</p></li>
+<li><p>Prepare an <strong>R Script</strong> to save all your work in this chapter. I suggest you name it “<code>POL232_Week#_YourLastName.R</code>” or “<code>POL232_Tutorial#_YourLastName.R</code>” in which <code>#</code> is the number of the current week or tutorial session.</p></li>
+<li><p>You also need to load <strong><code>tidyverse</code> and <code>jtools</code> packages</strong> into your current <strong>R</strong> session (<a href="setup.html#sec-load-packages" class="quarto-xref"><span>Section 1.4.2</span></a>).</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(jtools)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>I suggest you <span class="red-text">actually write</span> <strong>the R functions</strong> used below in your <strong>R script</strong> instead of copying and pasting them. See <a href="des1.html#sec-actually-write-rscript" class="quarto-xref"><span>Section 3.1.5</span></a> for <span class="red-text">why</span>.</p></li>
+<li><p>I also suggest you <span class="red-text">sufficiently annotate</span> your <strong>R script</strong> (i.e.&nbsp;leaving notes after the <code>#</code> sign) so that you can use your <strong>R script</strong> as your reference when you work on tutorial exercises or data analysis paper assignments. In other words, this <strong>R script</strong> will be <span class="red-text">your notes for this chapter</span>.</p></li>
+</ul>
+<section id="preparation" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="preparation"><span class="header-section-number">9.1</span> Preparation</h2>
+<section id="prepare-variables" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="prepare-variables"><span class="header-section-number">9.1.1</span> Prepare Variables</h3>
+<p>As in the previous chapters, create <code>percep_economy_cps_n</code>, which is <strong>a <code>numeric</code> version</strong> of <code>percep_economy_cps</code>, and <code>union_d</code>, <strong>a <code>logical</code> version</strong> of <code>union</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  ces2019 <span class="ot">&lt;-</span> ces2019 <span class="sc">|&gt;</span> </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">percep_economy_cps =</span> <span class="fu">fct_relevel</span>(percep_economy_cps, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>              <span class="st">"(2) Worse"</span>, <span class="st">"(3) About the same"</span>, <span class="st">"(1) Better"</span>) ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">percep_economy_cps =</span> <span class="fu">fct_recode</span>(percep_economy_cps, </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Worse"</span> <span class="ot">=</span> <span class="st">"(2) Worse"</span>, </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Same"</span> <span class="ot">=</span> <span class="st">"(3) About the same"</span>, </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Better"</span> <span class="ot">=</span> <span class="st">"(1) Better"</span>) ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">percep_economy_cps_n =</span> <span class="fu">as.numeric</span>(percep_economy_cps))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  ces2019 <span class="ot">&lt;-</span>  ces2019 <span class="sc">|&gt;</span> <span class="co"># Change the name of categories of union to TRUE and FALSE.</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>( <span class="at">union_d =</span> <span class="fu">fct_recode</span>(union, <span class="st">"TRUE"</span> <span class="ot">=</span> <span class="st">"(1) Yes"</span>, <span class="st">"FALSE"</span> <span class="ot">=</span> <span class="st">"(2) No"</span>) ) <span class="sc">|&gt;</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>( <span class="at">union_d =</span> <span class="fu">as.logical</span>(union_d) )  <span class="co"># Then, apply the as.logical() function.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="prepare-new-data-frame" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="prepare-new-data-frame"><span class="header-section-number">9.1.2</span> Prepare New Data Frame</h3>
+<p>Also construct <span class="red-text">a new data frame which includes non-missing observations</span> for the variables used in the example linear regression model in this chapter. These variables are <code>trudeau_therm_cps</code>, <code>percep_economy_cps_n</code>, <code>percep_economy_cps</code>, <code>ideology</code>, <code>union_d</code>, and <code>province</code>. <span class="red-text">The new data frame</span> is named <strong><code>my_data</code></strong> in the code below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>  my_data <span class="ot">&lt;-</span> ces2019 <span class="sc">|&gt;</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">drop_na</span>( trudeau_therm_cps, percep_economy_cps_n, percep_economy_cps, </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>               ideology, union_d, province )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="sec-subsig-ex-model" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="sec-subsig-ex-model"><span class="header-section-number">9.1.3</span> Estimate Example Model</h3>
+<p>As a primary example, I will use <span class="red-text">a multiple linear regression of <code>trudeau_therm_cps</code> on <code>percep_economy_cps_n</code>, <code>ideology</code>, <code>union_d</code> and <code>province</code></span>. Let’s estimate this model and assign it to <strong>a new object</strong>, named <strong><code>model</code></strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>  model <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">formula =</span> trudeau_therm_cps <span class="sc">~</span> percep_economy_cps_n</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                                              <span class="sc">+</span> ideology <span class="sc">+</span> union_d <span class="sc">+</span> province, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                      <span class="at">data =</span> my_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Note that the model includes <span class="red-text">four different types of independent variables</span>:</p>
+<ul>
+<li><p><strong>a <code>numeric</code> version</strong> of <strong>an ordinal categorical variable</strong> (<code>percep_economy_cps_n</code>),</p></li>
+<li><p><strong>a quantitative variable</strong> (<code>ideology</code>),</p></li>
+<li><p><strong>a dummy variable</strong> stored as <strong>a <code>logical</code></strong> (<code>union_d</code>), and</p></li>
+<li><p><strong>a nominal categorical variable</strong> stored as <strong>a <code>factor</code></strong> (<code>province</code>).</p></li>
+</ul>
+<p>I will discuss how we can evaluate <span class="red-text">the substantive significance</span> for <span class="red-text">each type</span> of variable.</p>
+<p>Let’s take a look at the estimation result by <strong>the <code>summ()</code> function</strong> from <strong>the <code>jtools</code> package</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summ</span>(model, <span class="at">confint =</span> <span class="cn">TRUE</span>, <span class="at">digits =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>MODEL INFO:
+Observations: 2346
+Dependent Variable: trudeau_therm_cps
+Type: OLS linear regression 
+
+MODEL FIT:
+F(12,2333) = 69.7279, p = 0.0000
+R² = 0.2640
+Adj. R² = 0.2602 
+
+Standard errors:OLS
+----------------------------------------------------------------------------
+                                Est.      2.5%     97.5%     t val.        p
+-------------------------- --------- --------- --------- ---------- --------
+(Intercept)                  15.2848    9.7034   20.8662     5.3702   0.0000
+percep_economy_cps_n         15.8163   14.2630   17.3697    19.9667   0.0000
+ideology                     -2.6628   -3.1577   -2.1678   -10.5489   0.0000
+union_dTRUE                   0.5959   -2.0253    3.2171     0.4458   0.6558
+provinceBC                   11.7557    7.1483   16.3631     5.0034   0.0000
+provinceMB                   10.8040    5.1630   16.4450     3.7558   0.0002
+provinceNB                   16.9362   10.7094   23.1630     5.3336   0.0000
+provinceNL                   18.4670   12.1214   24.8126     5.7068   0.0000
+provinceNS                   12.1679    5.9590   18.3769     3.8430   0.0001
+provinceON                   15.3387   10.6994   19.9780     6.4835   0.0000
+provincePE                   15.8607    9.6777   22.0437     5.0303   0.0000
+provinceQC                   12.3670    7.6228   17.1111     5.1118   0.0000
+provinceSK                    3.4424   -2.2297    9.1144     1.1901   0.2341
+----------------------------------------------------------------------------</code></pre>
+</div>
+</div>
+<p>The linear regression table above shows <strong>the 95% confidence intervals</strong> for all coefficients. You can also read the <span class="red-text">statistical significance</span> from <strong>the p-values</strong> at the right most column (<code>p</code>). If this number times 100 percent — (<code>p</code> <span class="math inline">\(\times\)</span> 100)% — is smaller than a certain significance level (e.g., 5%, 1%, 0.1%), then the coefficient with this p-value is statistically significant at this significance level.</p>
+<p>If you want <strong>R</strong> to tell you which coefficient is <span class="red-text">statistically significant</span> at <strong>the 5%, 1% or 0.1% significance level</strong>, you may use <strong>the <code>summary()</code> function</strong>. Or if you use <strong>the <code>export_summs()</code> function</strong> from <strong>the <code>huxtable</code> package</strong>, then you can see both <strong>confidence intervals</strong> and <strong>the signs for</strong> <span class="red-text">statistical significance</span> together in a single table. Review <a href="linreg_inf.html#sec-lr-inf-table" class="quarto-xref"><span>Section 8.4</span></a> for detail.</p>
+<!-- ```{r, render = knitr::normal_print} -->
+<!--   summary(model) -->
+<!-- ``` -->
+<!-- The table produced by the following command appears at the end of this **Handbook** as it is too long to fit here. -->
+<!-- ```{r, message = FALSE} -->
+<!--   export_summs(model, -->
+<!--                error_format = "[{conf.low}, {conf.high}]") -->
+<!-- ``` -->
+</section>
+</section>
+<section id="sec-subsig-section" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="sec-subsig-section"><span class="header-section-number">9.2</span> Substantive Significance</h2>
+<section id="basic-idea" class="level3" data-number="9.2.1">
+<h3 data-number="9.2.1" class="anchored" data-anchor-id="basic-idea"><span class="header-section-number">9.2.1</span> Basic Idea</h3>
+<p>When we have a certain substantive/theoretical expectation for the relationship of two variables in the population, <strong>the first step</strong> to examine this expectation is to see whether we have <strong>a point estimate of the coefficient</strong> of a variable of our interest <span class="red-text">in the expected direction</span> (i.e., positive or negative) and <span class="red-text">what range of values</span> <strong>its confidence interval</strong> <span class="red-text">encompasses</span>. If the confidence interval does not include zero, we may say that the coefficient of our interest is statistically distinguishable from zero, or more simply, <span class="red-text">statistically significant</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> We have seen how to conduct these analyses in <strong>R</strong> in <a href="linreg_inf.html" class="quarto-xref"><span>Chapter 8</span></a>.</p>
+<p><strong>The second step</strong> is to examine whether the relationship found is <span class="red-text">substantively important or significant</span>. The relationship may be substantively important/significant if <strong>the magnitude of the estimated relationship</strong> is <span class="red-text">meaningfully large</span> in <strong>its specific context</strong>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> There is <strong>no unique way</strong> <span class="red-text">to assess the substantive significance</span> of the relationship. In general, you need to <strong>make an argument</strong> based on <span class="red-text">the specific nature of the relationship of your interest</span> and <span class="red-text">the findings</span> in your empirical research.</p>
+<p>There may be <span class="red-text">many different ways</span> to make such an argument, but for the final paper in this class, I suggest you <span class="red-text">estimate</span> <strong>the change in the expected value of the dependent variable</strong> (<span class="math inline">\(E(Y|X)\)</span>) <span class="red-text">corresponding to</span> <strong>a meaningful change in the independent variable of your interest</strong> (<span class="math inline">\(X\)</span>) based on the results of your <span class="red-text">linear regression analysis</span>.</p>
+<p>This is what I have suggested in my lecture. To recap, let me restate my suggestion below.</p>
+<ol type="1">
+<li><span class="red-text">Identify</span> <strong>a substantively meaningful amount of change in <span class="math inline">\(X\)</span></strong>. Let’s say this is identified as the change from <span class="math inline">\(X^*\)</span> to <span class="math inline">\(X^{**}\)</span>. Then, it may be denoted as (<span class="red-text"><span class="math inline">\(\Delta X = X^{**} - X^*\)</span></span>).</li>
+<li><span class="red-text">Estimate</span> <strong>the change in <span class="math inline">\(E(Y|X)\)</span></strong>, the change in the conditional expectation/mean of Y, corresponding to this substantively meaningful change in <span class="math inline">\(X\)</span>. This change can be denoted by <span class="red-text"><span class="math inline">\(E(Y|X^{**}) - E(Y|X^{*}) = \beta \times \Delta X\)</span></span>, where <span class="math inline">\(\beta\)</span> is the coefficient of <span class="math inline">\(X\)</span>.</li>
+<li><span class="red-text">Estimate</span> <strong>the confidence interval</strong> for this change in <span class="math inline">\(E(Y|X)\)</span>.</li>
+<li><span class="red-text">Discuss</span> <strong>the substantive magnitude</strong> of the relationship between <span class="math inline">\(Y\)</span> and <span class="math inline">\(X\)</span> based on both the point estimate and confidence interval for this change in <span class="math inline">\(E(Y|X)\)</span>.</li>
+</ol>
+<p><img src="figures/RHB_Ch9_SubSig.png" class="img-fluid" style="width:45.0%"></p>
+<p>As you can see in the above figure, this change in <span class="math inline">\(E(Y|X) = E(Y|X^{**}) - E(Y|X^{*})\)</span> is <span class="red-text">the difference in</span> <strong>the values of the dependent variable</strong> <span class="red-text">along</span> <strong>a linear regression line</strong> <span class="red-text">in the population</span>. This “difference (or change) in <span class="math inline">\(E(Y|X)\)</span>” is <strong>the population parameter</strong> of our interest in the present context.</p>
+<p>Then, we estimate the change in <span class="math inline">\(E(Y|X)\)</span> in the population using <span class="red-text">the difference in <span class="math inline">\(\widehat{Y}\)</span></span> or <span class="red-text">the difference in <span class="math inline">\(\widehat{E(Y|X)} = \widehat{E(Y|X^{**})} - \widehat{E(Y|X^{*})}\)</span></span>, which is <span class="red-text">the difference in</span> <strong>the predicted/fitted values</strong> computed from <strong>our <span class="red-text">sample</span> linear regression model</strong> or <span class="red-text">the difference in</span> <strong>the values of the dependent variable</strong> <span class="red-text">along</span> <strong>a linear regression line</strong> <span class="red-text">in our sample</span>. In other words, the difference in the predicted/fitted values, <span class="math inline">\(\widehat{E(Y|X)}\)</span> or <span class="math inline">\(\widehat{Y}\)</span>, is our <strong>estimator</strong> or <strong>estimate</strong> for the difference in <span class="math inline">\(E(Y|X)\)</span> in the population.</p>
+<p>Throughout this chapter, I will use <span class="red-text">“the difference (or change) in <span class="math inline">\(E(Y|X)\)</span> (or the conditional expectation/mean)”</span> and <span class="red-text">“<span class="math inline">\(E(Y|X^{**}) - E(Y|X^{*})\)</span>”</span> to refer to <strong>our population parameter</strong></p>
+<p>Similarly, I will use <span class="red-text">“the difference (or change) in <span class="math inline">\(\widehat{E(Y|X)}\)</span>”</span> and <span class="red-text">“<span class="math inline">\(\widehat{E(Y|X^{**})} - \widehat{E(Y|X^{*})}\)</span>”</span> to refer to <strong>our estimator or estimate</strong> for the change in <span class="math inline">\(E(Y|X)\)</span> in the population.</p>
+<p>Note that the discussion so far implicitly assumes that we have only one independent variable, <span class="math inline">\(X\)</span>, on the right hand side of a linear regression equation. However, we normally <strong>control for some other variables</strong>, which are <strong>collectively denoted by <span class="math inline">\(Z\)</span></strong> here. Therefore, the change in the conditional expectation of <span class="math inline">\(Y\)</span> corresponding to the meaningful change in <span class="math inline">\(X\)</span> is estimated <strong>holding all other variables <span class="math inline">\(Z\)</span> constant at certain values, say <span class="math inline">\(Z^+\)</span></strong>. Incorporating <span class="math inline">\(Z^+\)</span>, our population parameter can be denoted as <span class="red-text">“the difference (or change) in <span class="math inline">\(E(Y|X,Z^+) = E(Y|X^{**},Z^+) - E(Y|X^{*},Z^+)\)</span>”</span>.</p>
+<p>For example, suppose we want to evaluate the substantive magnitude of the relationship between <code>trudeau_therm_cps</code> (<span class="math inline">\(Y\)</span>) and <code>percep_econ_cps_n</code> (<span class="math inline">\(X\)</span>) controlling for other variables (<span class="math inline">\(Z\)</span>) based on the multiple linear regression estimated in <a href="#sec-subsig-ex-model" class="quarto-xref"><span>Section 9.1.3</span></a>. In this case, we first estimate the difference in the conditional expectations of <code>trudeau_therm_cps</code> (<span class="math inline">\(E(Y|X,Z)\)</span>) between the individuals who perceived that the state of national economy had gotten better (<span class="math inline">\(X = 3\)</span>) and those who perceived that it had gotten worse (<span class="math inline">\(X = 1\)</span>), holding all other variables constant (<span class="math inline">\(Z = Z^+\)</span>). In equation, the difference we estimate may be written as <span class="math inline">\(E(Y | X = 3, Z^+) - E(Y | X = 1, Z^+)\)</span></p>
+<p>We should also derive the confidence interval for the difference in the conditional expectations of <code>trudeau_therm_cps</code> between the individuals who perceived that the state of economy had gotten better and those who perceived that it had gotten worse, holding other variables constant. Then, we will offer an argument about whether this difference in <span class="math inline">\(E(Y|X,Z^+)\)</span> is meaningfully large in the particular context of this relationship based on its point estimate and confidence interval.</p>
+</section>
+<section id="estimation-by-the-emmeans-package" class="level3" data-number="9.2.2">
+<h3 data-number="9.2.2" class="anchored" data-anchor-id="estimation-by-the-emmeans-package"><span class="header-section-number">9.2.2</span> Estimation by the <code>emmeans()</code> Package</h3>
+<p>To estimate <span class="red-text">the difference in <span class="math inline">\(E(Y|X,Z^+)\)</span></span> and derive <strong>its confidence interval</strong>, we will use <strong>the <code>emmeans()</code> function</strong> and <strong>the <code>contrast()</code> function</strong> from <strong>the <code>emmeans</code> package</strong>.</p>
+<p>First, install <strong>the <code>emmeans</code> package</strong> (<a href="setup.html#sec-rpackages" class="quarto-xref"><span>Section 1.4</span></a>).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">install.packages</span>(<span class="st">"emmeans"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then, load this package.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(emmeans)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<!-- Using the `emmeans()` package, we can conduct statistical inference for the difference in the predicted values ($\widehat{Y}$) --- the estimation of the conditional means ($\widehat{E(Y|X)}$) --- between certain values of the independent variables of our interest. I will follow a usual convention to use the term "the predicted values" to refer to the estimation of the conditional means $\widehat{E(Y|X)}$. I will also use $\widehat{Y}$ and $\widehat{E(Y|X)}$ interchangeably to refer to the predicted values or the estimates of the conditional means. -->
+<p>Our analysis is in two steps.</p>
+<ul>
+<li><p>In the first step, we will use <strong>the <code>emmeans()</code> function</strong> to <span class="red-text">estimate <span class="math inline">\(E(Y|X,Z^+)\)</span></span> for <span class="red-text">different values of <span class="math inline">\(X\)</span></span>, such as <span class="red-text"><span class="math inline">\(X^*\)</span></span> and <span class="red-text"><span class="math inline">\(X^{**}\)</span></span>, <strong>holding other variables <span class="math inline">\(Z\)</span> constant</strong> at <span class="red-text"><span class="math inline">\(Z^+\)</span></span>.</p></li>
+<li><p>In the second step, we will supply the result of <strong>the <code>emmeans()</code> function</strong> to <strong>the <code>contrast()</code> function</strong> to conduct <span class="red-text">statistical inference</span> for <span class="red-text">the difference in <span class="math inline">\(E(Y|X,Z^+) = E(Y|X^{**},Z^+) - E(Y|X^{*},Z^+)\)</span></span>.</p></li>
+</ul>
+<p>I will explain each step in turn in the following two sections.</p>
+</section>
+<section id="sec-subig-est-eyx" class="level3" data-number="9.2.3">
+<h3 data-number="9.2.3" class="anchored" data-anchor-id="sec-subig-est-eyx"><span class="header-section-number">9.2.3</span> Estimate <span class="math inline">\(E(Y|X,Z^+)\)</span>: <code>emmeans()</code></h3>
+<p>For the first step to <span class="red-text">estimate <span class="math inline">\(E(Y|X,Z^+)\)</span></span>, we use <strong>the <code>emmeans()</code> function</strong>. For our purpose, we specify the following three arguments in <strong>the <code>emmeans()</code> function</strong>.</p>
+<ul>
+<li><p>The first argument (<code>object</code>) is <strong>the outcome of the <code>lm()</code> function</strong>, which is used to estimate the difference in <span class="math inline">\(E(Y|X,Z^+)\)</span></p></li>
+<li><p>The second argument (<code>spec</code>) is <strong>the name of the independent variable of our interest, <span class="math inline">\(X\)</span></strong>.</p></li>
+<li><p>The third argument (<code>at</code>) is <strong>the values taken by the main independent variable of our interest, <span class="math inline">\(X\)</span>, and control variables, <span class="math inline">\(Z\)</span></strong>. For <span class="math inline">\(X\)</span>, we will specify <span class="red-text">both <span class="math inline">\(X = X^*\)</span> and <span class="math inline">\(X = X^{**}\)</span></span>. For all other control variables, <span class="math inline">\(Z\)</span>, we can specify <span class="red-text"><span class="math inline">\(Z = Z^+\)</span></span>, but we will see that the specification of the values for <span class="math inline">\(Z\)</span> can be omitted for our purpose to compute <span class="red-text">the difference</span> in <span class="math inline">\(E(Y|X,Z^+)\)</span>.</p></li>
+</ul>
+<!-- [^subsig-3] -->
+<!-- [^subsig-3]: These are not the minimum arguments needed for **the emmeans() function**. **The emmeans() function** can produce its result only with the first and second arguments "object" and "spec." However, starting our discussion from the result of **the emmeans() function** only with these minimum arguments will introduce unnecessary complications. Therefore, I start by specifying the three arguments `object`, `spec`, and `at`, which simplifies the explanation for what is needed for our purpose. -->
+<p>As we use the multiple linear regression model estimated in <a href="#sec-subsig-ex-model" class="quarto-xref"><span>Section 9.1.3</span></a>, <span class="math inline">\(Y\)</span> is <code>trudeau_therm_cps</code>, <span class="math inline">\(X\)</span> is <code>percep_economy_cps_n</code>, and <span class="math inline">\(Z\)</span> includes <code>ideology</code>, <code>union_d</code>, and <code>province</code>.</p>
+<p>Let’s estimate the conditional expectation of <code>trudeau_therm_cps</code> between the respondents who perceived the state of economy had gotten better (<code>percep_economy_cps_n = 3</code>) and those who perceived it had gotten worse (<code>percep_economy_cps_n = 1</code>), holding the other control variables constant this way: ideology<code>= 5,</code>union_d<code>=</code>FALSE<code>, and</code>province<code>=</code>AB` (i.e., non-union member, Alberta resident with neutral ideology).</p>
+<p>Here,</p>
+<ul>
+<li><p><span class="math inline">\(X = X^{**}\)</span> corresponds to “<code>percep_economy_cps_n = 3</code>,”</p></li>
+<li><p><span class="math inline">\(X = X^*\)</span> corresponds to “<code>percep_economy_cps_n = 1</code>,” and</p></li>
+<li><p><span class="math inline">\(Z = Z^+\)</span> corresponds to “<code>ideology = 5</code>, <code>union_d = FALSE</code>, and <code>province = AB</code>”.</p></li>
+</ul>
+<p>For simplicity, let’s <span class="red-text">estimate <span class="math inline">\(E(Y|X^*,Z^+)\)</span></span> first. This is the conditional expectation of <span class="math inline">\(Y\)</span> when the value of <span class="math inline">\(X\)</span> is held at <span class="math inline">\(X^*\)</span> and the values of <span class="math inline">\(Z\)</span> at <span class="math inline">\(Z^+\)</span>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">object =</span> model, <span class="co"># The first argument is the output from the lm() function.</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>           </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  <span class="co"># The second argument is the independent </span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>                                            <span class="co"># variable of our interest.</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>           </span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>              <span class="co"># In the third argument, we specify the values at which we want to hold </span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>              <span class="co"># both the main independent variable of our interest and the other </span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>              <span class="co"># control variables. We may include the equations for all independent  </span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>              <span class="co"># variables within the list() function on the right-hand side of this </span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>              <span class="co"># argument.</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>(<span class="at">percep_economy_cps_n =</span> <span class="dv">1</span>, </span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>                     <span class="at">ideology =</span> <span class="dv">5</span>, <span class="at">union_d =</span> <span class="cn">FALSE</span>, <span class="at">province =</span> <span class="st">"AB"</span>) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> percep_economy_cps_n emmean   SE   df lower.CL upper.CL
+                    1   17.8 2.04 2333     13.8     21.8
+
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>In the output above, you can see <strong>the point estimate of <span class="math inline">\(E(Y|X^*,Z^+)\)</span></strong> under <code>emmean</code>, <span class="red-text">its standard error</span> under <code>SE</code>, <span class="red-text">the lower end</span> of <strong>the 95% confidence interval for <span class="math inline">\(E(Y|X^*,Z^+)\)</span></strong> under <code>lower.CL</code>, and <span class="red-text">the upper end</span> under <code>upper.CL</code>. I skip the “df” column as we don’t cover the degrees of freedom (“df”) in this class. According to this result, <strong>the conditional expectation of <code>trudeau_therm_cps</code></strong> when <code>percep_economy_cps_n</code> = 1, <code>ideology</code> = 5, <code>union_d</code> = <code>FALSE</code>, and <code>province</code> = <code>AB</code> is estimated as <code>17.8</code>, and <strong>its 95% confidence interval</strong> is <code>[13.8, 21.8]</code>.</p>
+<p>In the second argument (<code>specs</code>), we specified <code>percep_economy_cps_n</code> as <span class="red-text">the main independent variable, <code>X</code></span>, for which we want to estimate <span class="math inline">\(E(Y|X,Z^+)\)</span> at different values.</p>
+<p>If we specify <span class="red-text">multiple values</span> for <code>percep_economy_cps_n</code> in the third argument (<code>at</code>), then <strong>the <code>emmeans()</code> function</strong> will estimate <span class="red-text">multiple <span class="math inline">\(E(Y|X,Z^+)\)</span></span> corresponding to <span class="red-text">each of the values specified for</span> <code>percep_economy_cps_n</code>.</p>
+<p>Below I specified three values — 1, 2 and 3 — for <code>percep_economy_cps_n</code> using <code>c()</code> to list all these values.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">object =</span> model, </span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>           </span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>              <span class="co"># In the third argument, we specify three values --- 1, 2 and 3 --- for </span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>              <span class="co"># percep_economy_cps_n.</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>(<span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), </span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>                     <span class="at">ideology =</span> <span class="dv">5</span>, <span class="at">union_d =</span> <span class="cn">FALSE</span>, <span class="at">province =</span> <span class="st">"AB"</span>) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> percep_economy_cps_n emmean   SE   df lower.CL upper.CL
+                    1   17.8 2.04 2333     13.8     21.8
+                    2   33.6 2.05 2333     29.6     37.6
+                    3   49.4 2.33 2333     44.8     54.0
+
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>Then, <strong>the <code>emmeans()</code> function</strong> estimated <strong>three conditional expectations of <code>trudeau_therm_cps</code></strong> <span class="red-text">for each value specified for</span> <code>percep_economy_cps_n</code> holding other variables at <code>ideology</code> = 5, <code>union_d</code> = <code>FALSE</code>, and <code>province</code> = <code>AB</code>. Specifically, the conditional expectation of <code>trudeau_therm_cps</code> is 17.8 when <code>percep_economy_cps_n = 1</code>, 33.6 when <code>percep_economy_cps_n = 2</code>, and 49.4 when <code>percep_economy_cps_n = 3</code>, holding other variables at the specified values.</p>
+<p>Note that <strong>the <code>emmeans()</code> function</strong> estimates <span class="math inline">\(E(Y|X,Z^+)\)</span> for each of the specified values only for the variable specified in <strong>the <code>specs</code> argument</strong> (<span class="math inline">\(X\)</span>). For example, the code below lists multiple values for <code>ideology</code> in <strong>the <code>at</code> argument</strong><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> while <code>percep_economy_cps_n</code> is still suggested in the <code>specs</code> argument. This code does not produce multiple <span class="math inline">\(E(Y|X,Z)\)</span> for each of the specified values for <code>ideology</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">object =</span> model, </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>           </span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>              <span class="co"># Now we specify the values from 0 to 10 for "ideology,"</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>              <span class="co"># but the specs argument is still "percep_economy_cps_n."</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>(<span class="at">percep_economy_cps_n =</span> <span class="dv">1</span>, </span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>                     <span class="at">ideology =</span> <span class="fu">c</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">10</span>), <span class="at">union_d =</span> <span class="cn">FALSE</span>, <span class="at">province =</span> <span class="st">"AB"</span>) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> percep_economy_cps_n emmean   SE   df lower.CL upper.CL
+                    1   17.8 2.04 2333     13.8     21.8
+
+Results are averaged over the levels of: ideology 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>The above command estimated only one <span class="math inline">\(E(Y|X,Z)\)</span>. There is also the message that “<code>Results are averaged over the levels of: ideology</code>”. What this means is that <strong>the <code>emmeans()</code> function</strong> first estimated multiple <span class="math inline">\(E(Y|X,Z)\)</span> for each of the specified values from 0 to 10 of <code>ideology</code> with other variables fixed at the specified values and then took the average of <span class="math inline">\(E(Y|X)\)</span> across all the values of <code>ideology</code> from 0 to 10. If we want to estimate <span class="math inline">\(E(Y|X,Z)\)</span> for each of these values of <code>ideology</code> separately, we should specify <code>ideology</code> in the <code>specs</code> function as in the code below. Note that <code>ideology</code> is the main independent variable of our interest (<span class="math inline">\(X\)</span>), and <code>percep_economy_cps_n</code> is one of the control variables (<span class="math inline">\(Z\)</span>) in this case.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">object =</span> model, </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">specs =</span> <span class="st">"ideology"</span>,  </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>              <span class="co"># The specs argument is now changed to "ideology."</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>           </span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>(<span class="at">percep_economy_cps_n =</span> <span class="dv">1</span>, </span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>                     <span class="at">ideology =</span> <span class="fu">c</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">10</span>), <span class="at">union_d =</span> <span class="cn">FALSE</span>, <span class="at">province =</span> <span class="st">"AB"</span>) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> ideology emmean   SE   df lower.CL upper.CL
+        0  31.10 2.54 2333   26.113    36.09
+        1  28.44 2.40 2333   23.733    33.14
+        2  25.78 2.27 2333   21.316    30.23
+        3  23.11 2.17 2333   18.856    27.37
+        4  20.45 2.09 2333   16.346    24.55
+        5  17.79 2.04 2333   13.779    21.80
+        6  15.12 2.03 2333   11.153    19.10
+        7  12.46 2.04 2333    8.466    16.46
+        8   9.80 2.08 2333    5.718    13.88
+        9   7.14 2.15 2333    2.914    11.36
+       10   4.47 2.25 2333    0.058     8.89
+
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>Now <strong>the <code>emmeans()</code> function</strong> returned the estimation of <span class="math inline">\(E(Y|X,Z^+)\)</span> for all the specified values of <code>ideology</code> (<span class="math inline">\(X\)</span>), respectively, from 31.10 when <code>ideology = 0</code> to 4.47 when <code>ideology = 10</code> holding the other variables constant at the specified values (<span class="math inline">\(Z^+\)</span>).</p>
+<p>So far, we have specified <span class="red-text">the values for all variables included</span> in our linear regression model <span class="red-text">(<span class="math inline">\(X\)</span> and <span class="math inline">\(Z\)</span>)</span>. For our purpose, however, it suffices to specify <span class="red-text">the values just for the independent variable of our interest (<span class="math inline">\(X\)</span>)</span>. This is because what we are interested in is <span class="red-text"><em>the difference</em></span> in <span class="math inline">\(E(Y|X,Z)\)</span> across different values of <span class="math inline">\(X\)</span> holding other control variables <span class="math inline">\(Z\)</span> constant. For this purpose, which values we hold control variables at do not matter. If the values of control variables are not specified, <strong>the <code>emmeans()</code> function</strong> will use <span class="red-text">means</span> of these variables. In the code below, I specified the values for <code>percep_economy_cps_n</code> only in the third argument (<code>at</code>).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">object =</span> model, </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>           </span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>              <span class="co"># Now we specify the values for percep_economy_cps_n only.</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>( <span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>) )  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> percep_economy_cps_n emmean    SE   df lower.CL upper.CL
+                    1   29.6 1.020 2333     27.6     31.6
+                    2   45.5 0.755 2333     44.0     46.9
+                    3   61.3 1.160 2333     59.0     63.6
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>The estimated conditional expectations of <code>trudeau_therm_cps</code> for each value of <code>percep_economy_cps_n</code> in this output are different from those reported before. This is because the values of other control variables <span class="math inline">\(Z\)</span> are held at different values. More specifically, without the values specified in <strong>the <code>at</code> argument</strong>, the values of the other variables <span class="math inline">\(Z\)</span> are held at their means, if the variables are <code>numeric</code>. In the current example, as <code>ideology</code> is a <code>numeric</code> variable, its value is held at its mean. If <span class="math inline">\(Z\)</span> are <code>factor</code> or <code>logical</code> variables, <span class="math inline">\(E(Y|X,Z)\)</span> is first computed for each category of these variables in <span class="math inline">\(Z\)</span>, and the average of <span class="math inline">\(E(Y|X,Z)\)</span> is computed across all these categories of <span class="math inline">\(Z\)</span>. Therefore, there is a message in the above output indicating “<code>Results are averaged over the levels of: union_d, province</code>.”</p>
+<p>Because <strong>what values we hold control variables constant at</strong> <span class="red-text">do not matter</span> when we take <span class="red-text"><em>the difference</em> in <span class="math inline">\(E(Y|X)\)</span></span> by <strong>the <code>contrast()</code> function</strong> introduced in the next section, we will specify the values only for the independent variable of our interest <span class="math inline">\(X\)</span> in <strong>the <code>at</code> argument</strong> of <strong>the <code>emmeans()</code> function</strong> in the rest of this chapter.</p>
+<!-- Using **the `emmeans()` function** as suggested above, we can estimate $E(Y|X,Z)$ for different values of the independent variable of our interest $X$, holding other variables $Z$ constant. -->
+</section>
+<section id="sec-subig-est-diff" class="level3" data-number="9.2.4">
+<h3 data-number="9.2.4" class="anchored" data-anchor-id="sec-subig-est-diff"><span class="header-section-number">9.2.4</span> Statistical Inference for <em>Difference</em> in <span class="math inline">\(E(Y|X,Z^+)\)</span>: <code>contrast()</code></h3>
+<p>In the second step, we will supply the result of <strong>the <code>emmeans()</code> function</strong> to <strong>the <code>contrast()</code> function</strong> to <span class="red-text">estimate the difference in <span class="math inline">\(E(Y|X)\)</span></span> between different values of the independent variable of interest. In other ward, we estimate <span class="red-text"><span class="math inline">\(E(Y|X^{**},Z^+) - E(Y|X^{*},Z^+)\)</span></span> by this method.</p>
+<p>Let’s estimate the difference in the conditional expectation of <code>trudeau_therm_cps</code> when <code>percep_economy_cps_n = 1</code> (the respondent’s perception of economy is “Worse”) and when <code>percep_economy_cps_n = 3</code> (the respondent’s perception of economy is “Better”), controlling for other variables.</p>
+<p>Recall that we can estimate <span class="math inline">\(E(Y|X,Z^+)\)</span> for <span class="red-text">each of these two values</span> of <code>percep_economy_cps_n</code> as below. Note that I use <strong>the pipe operator (<code>|&gt;</code>)</strong> in this code.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>  model <span class="sc">|&gt;</span>  </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>        <span class="co"># "model" will be piped to the emmeans() function as its first argument.</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>               </span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>               <span class="co"># We now specify two values --- 1 and 3 --- only for percep_economy_cps_n </span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>               <span class="co"># in the at argument.</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">at =</span> <span class="fu">list</span>( <span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>) ) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> percep_economy_cps_n emmean   SE   df lower.CL upper.CL
+                    1   29.6 1.02 2333     27.6     31.6
+                    3   61.3 1.16 2333     59.0     63.6
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>We supply <strong>this output</strong> to <strong>the <code>contrast()</code> function</strong> to <span class="red-text">take the difference</span>. We set <strong>the <code>method</code> argument</strong> of <strong>the <code>contrast()</code> function</strong> to <span class="red-text">“<code>pairwise</code>”</span>, so that <strong>the <code>contrast()</code> function</strong> will estimate <span class="red-text">a pairwise difference</span> in <span class="math inline">\(E(Y|X,Z^+)\)</span> between the values of <span class="math inline">\(X\)</span> specified in <strong>the <code>emmeans()</code> function</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>  model <span class="sc">|&gt;</span>   </span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">at =</span> <span class="fu">list</span>( <span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># The output from the emmeans() function is piped to the contrast() function.</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># The method argument is set to "pairwise".</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"pairwise"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast                                      estimate   SE   df t.ratio
+ percep_economy_cps_n1 - percep_economy_cps_n3    -31.6 1.58 2333 -19.967
+ p.value
+  &lt;.0001
+
+Results are averaged over the levels of: union_d, province </code></pre>
+</div>
+</div>
+<p>In the above output, <strong>the first column, named <code>contrast</code></strong>, lists <span class="red-text">a pairwise comparison of the values of the independent variable <span class="math inline">\(X\)</span> that we specified</span>. In this column, we can see <code>percep_economy_cps_n1 - percep_economy_cps_n3</code>, which means that the contrast here is <code>1 - 3</code> in the value of <code>percep_economy_cps_n</code>. This indicates that what was estimated here was the conditional expectation of <code>trudeau_therm_cps</code> when <code>percep_economy_cps_n = 1</code> (“<code>Worse</code>”) minus the conditional expectation of <code>trudeau_therm_cps</code> when <code>percep_economy_cps_n = 3</code> (“<code>Better</code>”), controlling for other variables. This is the expected change in <code>trudeau_therm_cps</code> when the <code>percep_economy_cps</code> variable changes from “<code>Better</code>” to “<code>Worse</code>”. Because the change in <code>percep_economy_cps</code> considered here corresponds to a two-unit <span class="red-text">decline</span> of the value of <code>percep_economy_cps_n</code>, and the coefficient estimate on <code>percep_economy_cps_n</code> is positive (<code>15.8163</code>), <span class="red-text">the expected difference in <code>trudeau_therm_cps</code></span> in the current scenario is <span class="red-text">negative</span>, <span class="math inline">\((-2) \times 15.8 = -31.6\)</span>. This is perhaps <span class="red-text">counter intuitive</span>, because <strong>the estimated relationship between <code>trudeu_therm_cps</code> and <code>percep_economy_cps_n</code></strong> is <span class="red-text">positive</span>.</p>
+<p>The problem here is that <span class="red-text">the pairwise difference computed</span> was <code>1 - 3</code> in terms of the values of <code>percep_economy_cps_n</code>, or “<code>Worse - Better</code>” in terms of <code>percep_economy_cps</code>. However, what we want instead is <span class="red-text">a pairwise difference of <code>3 - 1</code></span> or “<code>Better - Worse</code>”. That is, we want to <strong>reverse the order of these values</strong>.</p>
+<p>We can correct this in two ways. First, we may <span class="red-text">reverse the order of the values</span> specified for <code>percep_economy_cps_n</code> in <strong>the <code>at</code> argument</strong> in <strong>the <code>emmeans()</code> function</strong> as in the following code.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>  model <span class="sc">|&gt;</span>   </span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">at =</span> <span class="fu">list</span>( <span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">1</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>               <span class="co"># Now the values are specified as c(3,1) instead of c(1,3).               </span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"pairwise"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast                                      estimate   SE   df t.ratio
+ percep_economy_cps_n3 - percep_economy_cps_n1     31.6 1.58 2333  19.967
+ p.value
+  &lt;.0001
+
+Results are averaged over the levels of: union_d, province </code></pre>
+</div>
+</div>
+<p>Second, we may <span class="red-text">keep the original order of the values</span> for <code>percep_economy_cps_n</code> in <strong>the <code>emmeans()</code> function</strong>, but change <strong>the <code>method</code> argument</strong> to <strong><code>"revpairwise"</code></strong> in <strong>the <code>conrast()</code> function</strong>. “<code>revpairwise</code>” stands for <span class="red-text">a reversed pairwise comparison</span>. As its name suggests, if we use “<code>revpairwise</code>,” <strong>the <code>contrast()</code> function</strong> <span class="red-text">reverses the order of a pairwise comparison</span>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>  model <span class="sc">|&gt;</span>   </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">at =</span> <span class="fu">list</span>(<span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>               <span class="co"># Now the original order of the values --- c(1,3) --- is kept.               </span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>        <span class="co"># The method argument is changed to "revpairwise".  </span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"revpairwise"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast                                      estimate   SE   df t.ratio
+ percep_economy_cps_n3 - percep_economy_cps_n1     31.6 1.58 2333  19.967
+ p.value
+  &lt;.0001
+
+Results are averaged over the levels of: union_d, province </code></pre>
+</div>
+</div>
+<p><strong>Either way</strong>, now <span class="red-text">we can get the difference we want</span> — the change in the conditional expectation of <code>trudeau_therm_cps</code> when <code>percep_economy_cps_n</code> changes from <code>1</code> to <code>3</code> or <code>percep_economy_cps</code> changes from “<code>Worse</code>” to “<code>Better</code>”, which may be computed as <span class="math inline">\(2 \times 15.8 = 31.6\)</span>).</p>
+<p>In the above outputs, what follows after <code>contrast</code> and <code>estimate</code> are a few statistics for <span class="red-text">statistical inference</span> about <strong>the estimated difference in <span class="math inline">\(E(Y|X,Z^+)\)</span></strong>, such as <span class="red-text">its standard error</span> (<code>SE</code>) and <span class="red-text">p-value</span> (<code>p.value</code>). We can also derive <strong>the confidence interval for the difference in <span class="math inline">\(E(Y|X,Z^+)\)</span></strong> by specifying <strong>the <code>infer</code> argument</strong> to <code>TRUE</code> in <strong>the <code>contrast()</code> function</strong> as in the code below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>  model <span class="sc">|&gt;</span>   </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">at =</span> <span class="fu">list</span>( <span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Now we add "infer = TRUE" in the contrast() function.</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"revpairwise"</span>, <span class="at">infer =</span> <span class="cn">TRUE</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast                                      estimate   SE   df lower.CL
+ percep_economy_cps_n3 - percep_economy_cps_n1     31.6 1.58 2333     28.5
+ upper.CL t.ratio p.value
+     34.7  19.967  &lt;.0001
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>In this output, <code>lower.CL</code> indicates <span class="red-text">the lower end</span> of <strong>the 95% confidence interval for the difference</strong> and <code>upper.CL</code> <span class="red-text">the upper end</span>. According to this result, the 95% confidence interval for the difference in the conditional expectation of <code>trudeau_therm_cps</code> between those who perceived that the national economy had gotten better and those who perceived that it had gotten worse, controlling for the other variables included in the model, is <code>[28.5, 34.7]</code>.</p>
+<p>We can also change <strong>the confidence level</strong> by specifying <span class="red-text">the number between 0 and 1</span> in <strong>the <code>level</code> argument</strong> in <strong>the <code>contrast()</code> function</strong>. For example, if we specify <code>level = 0.99</code> as in the code below, <strong>the <code>contrast()</code> function</strong> produces <strong>the 99% confidence interval for the difference in <span class="math inline">\(E(Y|X,Z^+)\)</span></strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>  model <span class="sc">|&gt;</span>   </span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">at =</span> <span class="fu">list</span>( <span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Now we add the level argument in the contrast() function.  </span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"revpairwise"</span>, <span class="at">infer =</span> <span class="cn">TRUE</span>, <span class="at">level =</span> <span class="fl">0.99</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast                                      estimate   SE   df lower.CL
+ percep_economy_cps_n3 - percep_economy_cps_n1     31.6 1.58 2333     27.5
+ upper.CL t.ratio p.value
+     35.7  19.967  &lt;.0001
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.99 </code></pre>
+</div>
+</div>
+<p>In addition, we can also change <span class="red-text">the number of digits</span> to appear. For this purpose, as in the code below, we need to use <strong>the <code>summary()</code> function</strong> and <strong>the <code>print()</code> function</strong>, consecutively, and we specify <span class="red-text">the number of digits we want</span> in <strong>the <code>print()</code> function</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>  model <span class="sc">|&gt;</span>   </span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"percep_economy_cps_n"</span>,  </span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">at =</span> <span class="fu">list</span>( <span class="at">percep_economy_cps_n =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"revpairwise"</span>, <span class="at">infer =</span> <span class="cn">TRUE</span>, <span class="at">level =</span> <span class="fl">0.99</span> ) <span class="sc">|&gt;</span> </span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>            <span class="co"># The output from the contrast() function is piped to the summary() function.</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">summary</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Then, the output from the summary() function is piped further to the print() </span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>            <span class="co"># function, in which we can specify the number of digits to appear </span></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>            <span class="co"># in the output on the R Console.</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">print</span>( <span class="at">digits =</span> <span class="dv">6</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast                                      estimate      SE   df lower.CL
+ percep_economy_cps_n3 - percep_economy_cps_n1  31.6327 1.58427 2333  27.5485
+ upper.CL t.ratio p.value
+  35.7168  19.967  &lt;.0001
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.99 </code></pre>
+</div>
+</div>
+</section>
+<section id="sec-subig-arg" class="level3" data-number="9.2.5">
+<h3 data-number="9.2.5" class="anchored" data-anchor-id="sec-subig-arg"><span class="header-section-number">9.2.5</span> Making Argument for Substantive Significance</h3>
+<p>I suggested before that you should estimate the difference in <span class="math inline">\(E(Y|X,Z^+)\)</span> corresponding to <strong>a meaningful amount of change</strong> in the independent variable of your interest, <span class="math inline">\(X\)</span>. You should carefully consider what would be a meaningful change in your main independent variable <span class="math inline">\(X\)</span>. Note that there are <span class="red-text">no hard and fast rules</span> to determine <strong>what a meaningful amount of change would be</strong>. Instead, this is something you <span class="red-text">need to carefully consider</span> and <span class="red-text">make a reasonable argument</span>. To think about what a meaningful amount of change would be for your independent variable <span class="math inline">\(X\)</span>, it is advisable to <span class="red-text">explore</span> <strong>the distribution of <span class="math inline">\(X\)</span></strong> <span class="red-text">carefully</span> by using <span class="red-text">visualization</span> and/or <span class="red-text">its summary statistics</span>.</p>
+<p>As an example, I draw <strong>a bar chart</strong> for <code>percep_economy_cps</code> below. As you can see, although about a half of the responses are concentrated on “<code>Same</code>,” the responses are reasonably spread across all three categories from “<code>Worse</code>” to “<code>Better</code>.” More specifically, of about 2,300 observations, approximately one third of the responses are “<code>Worse</code>” and a quarter are “<code>Better</code>”. This distribution of the responses may justify that <strong>the change from “<code>Worse</code>” to “<code>Better</code>”</strong> would be <strong>a meaningful change in <code>percep_economy_cps</code> in this sample</strong>, because there are <span class="red-text">reasonable fractions of observations in all these categories</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="subsig_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid figure-img" width="240"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If most of the observations were concentrated on two consecutive categories, say “<code>Worse</code>” and “<code>Same</code>”, and only a tiny fraction of responses were in the last category, “<code>Better</code>”, as in <strong>the hypothetical bar chart</strong> below, then <strong>the change from “<code>Worse</code>” to “<code>Better</code>”</strong> might <span class="red-text">not have been justified</span> as <strong>a meaningful change</strong> in <code>percep_economy_cps</code> in this hypothetical sample. In this case, a meaningful change may be <strong>from “<code>Worse</code>” to “<code>Same</code>”</strong> because <span class="red-text">this change encompasses most of the observations</span>. The estimated change in the conditional expectations of <code>trudeau_therm_cps</code> corresponding to this change in <code>percep_economy_cps</code> is available immediately from the coefficient of <code>percep_economy_cps_n</code> as this is only a one-unit increase in <code>percep_economy_cps_n</code>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="subsig_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="240"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Once you have determined <strong>the meaningful amount of change in <span class="math inline">\(X\)</span></strong>, you can estimate the difference in <span class="math inline">\(E(Y|X,Z^+)\)</span> by <strong>the <code>emmeans()</code> and <code>contrast()</code> functions</strong>, as discussed in <a href="#sec-subig-est-eyx" class="quarto-xref"><span>Section 9.2.3</span></a> and <a href="#sec-subig-est-diff" class="quarto-xref"><span>Section 9.2.4</span></a>. After that, you <span class="red-text">need to offer your argument</span> about <span class="red-text">whether</span> <strong>this estimated amount of change in <span class="math inline">\(E(Y|X,Z^+)\)</span></strong> is <span class="red-text">of substantively meaningful magnitude</span>. The example above is relatively simple for this purpose because the estimated change in <code>trudeau_therm_cps</code> corresponding to the change in <code>percep_economy</code> from “<code>Worse</code>” to “<code>Better</code>” is <span class="math inline">\(31.6\)</span>, which is one-third — a large proportion — of the entire range of <code>trudeau_therm_cps</code>.</p>
+<p>When you evaluate the estimated difference in <span class="math inline">\(E(Y|X,Z^+)\)</span> with respect to a meaningful change in <span class="math inline">\(X\)</span>, make sure you consider <span class="red-text">the entire range of</span> <strong>its confidence interval</strong>. In the example above, <strong>the 99% confidence interval</strong> is <code>[28.5, 34.7]</code>. Even when we consider <span class="red-text">the lower end</span> or <span class="red-text">the upper end</span> of this interval, our conclusion will not change because either one is still about one-third of the entire range of <code>trudeau_therm_cps</code>. If <strong>the range of interval</strong> is <span class="red-text">so large</span> that <span class="red-text">the conclusion may be different</span> depending on whether we consider <span class="red-text">the point estimate</span>, <span class="red-text">the lower end</span> of the interval, or <span class="red-text">the upper end</span>, then we <span class="red-text">should reflect this difference in our discussion</span>. For example, if the confidence interval for the estimated change in <code>trudeau_therm_cps</code> corresponding to the change in <code>percep_economy</code> from “<code>Worse</code>” to “<code>Better</code>” were hypothetically <code>[5.5, 57.7]</code>, then this expected change in <code>trudeau_therm_cps</code> would be as large as more than a half of the entire range (57.5) or as small as one twentieth of the entire range (5.5). Our discussion should reflect this <span class="red-text">inconclusiveness of the estimated magnitude</span> in this hypothetical scenario.</p>
+<p>In the above example, I compared the estimated difference in <span class="math inline">\(E(Y|X)\)</span> with <strong>the entire range of the dependent variable</strong>, <code>trudeau_therm_cps</code>. Alternatively, you may compare the estimated difference in <span class="math inline">\(E(Y|X)\)</span> with <strong><span class="red-text">the IQR</span> or <span class="red-text">the standard deviation</span> of the dependent variable</strong>. If you use <strong>the IQR</strong>, then you compare the estimated difference in <span class="math inline">\(E(Y|X)\)</span> with the amount of variation in <span class="math inline">\(Y\)</span> in <span class="red-text">the middle half of your sample</span> in terms of the value of <span class="math inline">\(Y\)</span>. If you use <strong>the standard deviation</strong>, then you compare it with <span class="red-text">a typical amount of deviation in the value of <span class="math inline">\(Y\)</span> from the mean in your sample</span>. You may also draw <strong>a histogram of your dependent variable</strong> and <span class="red-text">identify</span> <strong>a meaningful range of values</strong> from <span class="red-text">the visual inspection of the distribution of <span class="math inline">\(Y\)</span></span>. It is of course fine if you can offer a reasonable discussion on the substantive magnitude of the difference in <span class="math inline">\(E(Y|X)\)</span> <span class="red-text">without reference to</span> <strong>a certain empirical range of the dependent variable</strong>. Again, there are <span class="red-text">no hard and fast rules</span> to determine whether the estimated change in <span class="math inline">\(E(Y|X)\)</span> is of substantive magnitude. <span class="red-text">Your creativity, logical and sensible reasoning, and convincing argumentation are called for</span>.</p>
+</section>
+</section>
+<section id="with-different-types-of-independent-variable-x" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="with-different-types-of-independent-variable-x"><span class="header-section-number">9.3</span> With Different Types of Independent Variable <span class="math inline">\(X\)</span></h2>
+<p>This section will discuss how we may consider <strong>a meaningful amount of change</strong> for <span class="red-text">different types of independent variable <span class="math inline">\(X\)</span></span>.</p>
+<section id="ordinal-categorical-variable" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="ordinal-categorical-variable"><span class="header-section-number">9.3.1</span> Ordinal Categorical Variable</h3>
+<section id="numeric-version" class="level4" data-number="9.3.1.1">
+<h4 data-number="9.3.1.1" class="anchored" data-anchor-id="numeric-version"><span class="header-section-number">9.3.1.1</span> Numeric Version</h4>
+<p>The main independent variable <span class="math inline">\(X\)</span> in the example in the previous section (<a href="#sec-subsig-section" class="quarto-xref"><span>Section 9.2</span></a>), <code>percep_economy_cps_n</code>, was <strong>a <code>numeric</code> version</strong> of <strong>an ordinal categorical variable</strong>. Therefore, if the independent variable of your interest is <strong>a <code>numeric</code> version</strong> of <strong>an ordinal categorical variable</strong>, then you may consider a meaningful change of this type of variable as we did in the previous section (<a href="#sec-subsig-section" class="quarto-xref"><span>Section 9.2</span></a>).</p>
+</section>
+<section id="dummified-version" class="level4" data-number="9.3.1.2">
+<h4 data-number="9.3.1.2" class="anchored" data-anchor-id="dummified-version"><span class="header-section-number">9.3.1.2</span> Dummified Version</h4>
+<p>If the independent variable of your interest <span class="math inline">\(X\)</span> is <span class="red-text">dummified for all categories except for one</span> (i.e., <strong>a <code>factor</code> version</strong> of <strong>an ordinal categorical variable</strong> is included in the right-hand side of the linear regression model in <strong>R</strong>), you may consider it in <span class="red-text">a similar way</span> to the example given below in the section on <strong>a nominal categorical variable</strong> (<a href="#sec-subsig-nominal" class="quarto-xref"><span>Section 9.3.4</span></a>).</p>
+</section>
+</section>
+<section id="sec-subsig-quant" class="level3" data-number="9.3.2">
+<h3 data-number="9.3.2" class="anchored" data-anchor-id="sec-subsig-quant"><span class="header-section-number">9.3.2</span> Quantitative Variable (<code>numeric</code>)</h3>
+<p>Now consider the difference in the conditional expectation of <code>trudeau_therm_cps</code> for <strong>a meaningful change in <code>ideology</code></strong> controlling for other variables in the model estimated above. That is, now we consider <code>ideology</code> as <strong>our main independent variable <span class="math inline">\(X\)</span></strong>.</p>
+<p>Note that <code>ideology</code> is <strong>a quantitative variable</strong>.</p>
+<section id="sec-subsig-quant-entire" class="level4" data-number="9.3.2.1">
+<h4 data-number="9.3.2.1" class="anchored" data-anchor-id="sec-subsig-quant-entire"><span class="header-section-number">9.3.2.1</span> Entire Range</h4>
+<p>One idea is to estimate the difference in <span class="math inline">\(E(Y|X)\)</span> between <span class="red-text">the minimum and maximum values of</span> <code>ideology</code> as we did for <code>percep_economy_cps_n</code>. As the minimum value of <code>ideology</code> is 0 (most leftist/liberal position), and the maximum is 10 (most rightist/conservative position), let’s specify these values for <code>ideology</code> in <strong>the <code>at</code> argument</strong> of <strong>the <code>emmeans()</code> function</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>model <span class="sc">|&gt;</span> </span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"ideology"</span>,  </span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>( <span class="at">ideology =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">0</span>) ) ) <span class="sc">|&gt;</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>          <span class="co"># We specified the maximum and minimum values of ideology.</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"pairwise"</span>, <span class="at">infer =</span> <span class="cn">TRUE</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast               estimate   SE   df lower.CL upper.CL t.ratio p.value
+ ideology10 - ideology0    -26.6 2.52 2333    -31.6    -21.7 -10.549  &lt;.0001
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>The estimated difference in the conditional mean of <code>trudeau_therm_cps</code> between <strong>the most conservative respondents</strong> (<code>ideology = 10</code>) and <strong>the most liberal respondents</strong> (<code>ideology = 0</code>), controlling for all other variables included in the model, is <span class="math inline">\(-26.6\)</span> and <strong>its 95% confidence interval</strong> is <code>[-31.6, -21.7]</code>.</p>
+<p>As discussed before, we should <span class="red-text">carefully consider</span> <strong>what a meaningful amount of change of <code>ideology</code> would be</strong>. For this purpose, let’s draw <strong>a bar chart</strong> of <code>ideology</code> below. Note that we draw <strong>a bar chart</strong> here because “ideology” takes <span class="red-text">only 11 values</span>. If we examine <strong>a continuous variable</strong> or <strong>a discrete variable with many more values</strong>, it may be better to draw <strong>a histogram</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="subsig_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="240"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>According to this <strong>bar chart</strong>, the respondents are <span class="red-text">spread across the entire range of <code>ideology</code></span> from <strong>the most leftist position</strong> (<code>ideology = 0</code>) to <strong>the most rightist position</strong> (<code>ideology = 10</code>). This observation may be used to justify the comparison of the conditional expectation of <code>trudeau_therm_cps</code> between <span class="red-text">the maximum and minimum values of</span> <code>ideology</code>.</p>
+</section>
+<section id="sec-subsig-quant-iqr" class="level4" data-number="9.3.2.2">
+<h4 data-number="9.3.2.2" class="anchored" data-anchor-id="sec-subsig-quant-iqr"><span class="header-section-number">9.3.2.2</span> IQR</h4>
+<p>However, <strong>the bar chart</strong> also indicates that there are only <span class="red-text">a very small number of respondents</span> in <strong>the extreme ideological positions</strong>, such as 0, 1, 9 and 10. We may want to use an alternative amount of change in <code>ideology</code>, which do <span class="red-text">not include these extreme ideological positions</span>. For example, we may want to use <strong>the IQR</strong> of <code>ideology</code>, which represents the extent of variation in the values of <code>ideology</code> in <span class="red-text">the middle half of the sample</span>. <strong>IQR</strong> of <code>ideology</code> may be computed by <strong>the <code>IQR()</code> function</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">IQR</span>(my_data<span class="sc">$</span>ideology, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+<p>For our purpose, however, we need <span class="red-text">the values of both lower and upper quartiles</span> because we need to specify these values for <code>ideology</code> in <strong>the <code>at</code> argument</strong> of <strong>the <code>emmeans()</code> function</strong>. We can find <span class="red-text">the lower and upper quartiles</span> of a variable by applying <strong>the <code>summary()</code> function</strong> to the variable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>(my_data<span class="sc">$</span>ideology)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  0.000   4.000   5.000   5.061   7.000  10.000 </code></pre>
+</div>
+</div>
+<p>According to the above result, <span class="red-text">the lower quartile</span> of <code>ideology</code> is 4 and <span class="red-text">the upper quartile</span> is 7. Let’s specify these values in <strong>the <code>at</code> argument</strong> of <strong>the <code>emmeans()</code> function</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>model <span class="sc">|&gt;</span> </span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"ideology"</span>,  </span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>( <span class="at">ideology =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">4</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>                <span class="co"># We specified the upper and lower quartiles of ideology.  </span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"pairwise"</span>, <span class="at">infer =</span> <span class="cn">TRUE</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast              estimate    SE   df lower.CL upper.CL t.ratio p.value
+ ideology7 - ideology4    -7.99 0.757 2333    -9.47     -6.5 -10.549  &lt;.0001
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>The estimated difference in the conditional expectation of <code>trudeau_therm_cps</code> between the respondents with <span class="red-text">the upper quartile</span> in <code>ideology</code> and those with <span class="red-text">the lower quartile</span> is <span class="math inline">\(-7.99\)</span> and <strong>its 95% confidence interval</strong> is <code>[ -9.47, -6.5]</code>.</p>
+</section>
+<section id="sec-subsig-quant-mean" class="level4" data-number="9.3.2.3">
+<h4 data-number="9.3.2.3" class="anchored" data-anchor-id="sec-subsig-quant-mean"><span class="header-section-number">9.3.2.3</span> One Standard Deviation Above and Below the Mean</h4>
+<p>Alternatively, we may want to use <strong>the standard deviation</strong> of <code>ideology</code> as a meaningful amount of change in this variable. We may use <strong>the <code>sd()</code> function</strong> to compute <strong>the standard deviation</strong> of a variable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sd</span>(my_data<span class="sc">$</span>ideology)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.21214</code></pre>
+</div>
+</div>
+<p>As <strong>the standard deviation</strong> represents <span class="red-text">a typical amount of deviation from the mean</span> of a variable, we may consider the variation in <code>ideology</code> from <span class="red-text">one standard deviation below its mean</span> to <span class="red-text">one standard deviation above its mean</span>. <strong>The mean</strong> of <code>ideology</code> was reported above as <span class="math inline">\(5.06\)</span> when we applied <strong>the <code>summary()</code> function</strong> to <code>ideology</code>. Given that <strong>the standard deviation</strong> of <code>ideology</code> reported above is <span class="math inline">\(2.21\)</span>, the range between one standard deviation below its mean (<span class="math inline">\(5.06 - 2.21 = 2.85\)</span>) and one standard deviation above its mean (<span class="math inline">\(5.06 + 2.21 = 7.27\)</span>) is <span class="math inline">\(2.85\)</span> and <span class="math inline">\(7.27\)</span>. Let’s specify these values in <strong>the <code>at</code> argument</strong> of <strong>the <code>emmeans()</code> function</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>model <span class="sc">|&gt;</span> </span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"ideology"</span>,  </span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>( <span class="at">ideology =</span> <span class="fu">c</span>(<span class="fl">7.27</span>, <span class="fl">2.85</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>                <span class="co"># We specified one standard deviation above the mean </span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>                <span class="co"># and one standard deviation below the mean of ideology.  </span></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"pairwise"</span>, <span class="at">infer =</span> <span class="cn">TRUE</span> ) <span class="sc">|&gt;</span>       </span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>( <span class="at">digits =</span> <span class="dv">4</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast                    estimate    SE   df lower.CL upper.CL t.ratio
+ ideology7.27 - ideology2.85   -11.77 1.116 2333   -13.96   -9.581 -10.549
+ p.value
+  &lt;.0001
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>The estimated difference in the conditional mean of <code>trudeau_therm_cps</code> between the respondents with <strong>one standard deviation above the mean</strong> in <code>ideology</code> and those with <strong>one standard deviation below the mean</strong> is <span class="math inline">\(-11.77\)</span>, and <strong>its 95% confidence interval</strong> is <code>[-13.96, -9.58]</code>.</p>
+<p>Note that <code>ideology</code> is <strong>a discrete variable</strong> which takes <span class="red-text">only integer values</span>. It may <span class="red-text">not make sense</span> to consider the values such as <span class="math inline">\(7.27\)</span> and <span class="math inline">\(2.85\)</span> as <span class="red-text"><code>ideology</code> never takes these values</span>. In this case, it may be more appropriate to use <span class="red-text">other types of range</span> discussed in the sections above (<a href="#sec-subsig-quant-entire" class="quarto-xref"><span>Section 9.3.2.1</span></a>, <a href="#sec-subsig-quant-iqr" class="quarto-xref"><span>Section 9.3.2.2</span></a>) and below (<a href="#sec-subsig-quant-visual" class="quarto-xref"><span>Section 9.3.2.4</span></a>).</p>
+<p>If the independent variable of interest is <strong>continuous</strong>, then the use of <strong>standard deviation</strong> <span class="red-text">makes more sense</span>, as decimals naturally appear in such a variable.</p>
+<p>Here we considered <span class="red-text">a two standard deviation change</span> of the independent variable <span class="math inline">\(X\)</span>, because we use the variation from one standard deviation below the mean to one standard deviation above the mean. Instead, we may also consider <span class="red-text">a one standard deviation change</span> — e.g., the variation from the mean to one standard deviation above the mean. This amount of change is considered in my lecture when the substantive significance of economic voting in the U.S. presidential elections is discussed based on the national-level aggregate data.</p>
+</section>
+<section id="sec-subsig-quant-visual" class="level4" data-number="9.3.2.4">
+<h4 data-number="9.3.2.4" class="anchored" data-anchor-id="sec-subsig-quant-visual"><span class="header-section-number">9.3.2.4</span> From Visual Inspection</h4>
+<p>Another alternative may be <strong>the range chosen from <span class="red-text">a visual inspection</span> of the distribution of <span class="math inline">\(X\)</span></strong>. In <strong>the bar chart</strong> drawn above, we can see that the values of <code>ideology</code> in <strong>the medium range from 3 to 7</strong>, except for the middle point of 5, have <span class="red-text">a relatively similar number of respondents</span>, which is almost twice the number of the scores right next to this range, 2 and 8. In other words, <strong>this medium range of 3 to 7</strong> seems to stand out from the rest as <span class="red-text">the most popular range</span> of left-right ideology. This observation may be used to justify the use of the difference in conditional expectation of <code>trudeau_therm_cps</code> in this range of <code>ideology</code>. In the code below, I used these values in <strong>the <code>at</code> argument</strong> of <strong>the <code>emmeans()</code> function</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>model <span class="sc">|&gt;</span> </span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"ideology"</span>,  </span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">at =</span> <span class="fu">list</span>( <span class="at">ideology =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">3</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>                <span class="co"># I derived these values from a visual inspection of</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>                <span class="co"># the bar chart of "ideology" drawn above.</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"pairwise"</span>, <span class="at">infer =</span> <span class="cn">TRUE</span> ) <span class="sc">|&gt;</span>       </span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>( <span class="at">digits =</span> <span class="dv">4</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast              estimate   SE   df lower.CL upper.CL t.ratio p.value
+ ideology7 - ideology3   -10.65 1.01 2333   -12.63   -8.671 -10.549  &lt;.0001
+
+Results are averaged over the levels of: union_d, province 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>The estimated difference in the conditional expectation of <code>trudeau_therm_cps</code> in <strong>this <span class="red-text">visually identified</span> middle range</strong> of <code>ideology</code> is <span class="math inline">\(-10.65\)</span> and <strong>its 95% confidence interval</strong> is <code>[-12.63, -8.67]</code>.</p>
+<p>Again, there are <span class="red-text">no hard and fast rules</span> to determine <span class="red-text">which one of the above ranges is most appropriate</span> for <code>ideology</code>. You need to offer <span class="red-text">a reasonable and convincing justification</span> on why you use a particular range. <span class="red-text">I would perhaps not use</span> <strong>the mean plus/minus one standard deviation</strong> for <code>ideology</code> because <code>ideology</code> is discrete and never takes decimals. While the entire range of <code>ideology</code> is informative and legitimate in its own right, I would not rely solely on this range because the respondents with extreme values of <code>ideology</code> are very small in number. <span class="red-text">I would perhaps supplement</span> the result with <strong>the entire range</strong> of <code>ideology</code> by the result with either <strong>the IQR</strong> of <code>ideology</code> or <strong>the range identified from a visual inspection</strong>.</p>
+</section>
+</section>
+<section id="dummy-variable-logical" class="level3" data-number="9.3.3">
+<h3 data-number="9.3.3" class="anchored" data-anchor-id="dummy-variable-logical"><span class="header-section-number">9.3.3</span> Dummy Variable (<code>logical</code>)</h3>
+<p>If the independent variable of interest <span class="math inline">\(X\)</span> is <strong>a dummy variable</strong>, <strong>the change from <span class="math inline">\(X = 0\)</span> to <span class="math inline">\(X = 1\)</span></strong> is <span class="red-text">an appropriate meaningful range of change</span> because it doesn’t take any other values. Its estimate and confidence interval can be found immediately from <strong>the coefficient on the dummy independent variable <span class="math inline">\(X\)</span></strong> reported in the output from <strong>the <code>summ()</code> function</strong>.</p>
+<p>In the output of the multiple linear regression model estimated in <a href="#sec-subsig-ex-model" class="quarto-xref"><span>Section 9.1.3</span></a>, the coefficient estimate of <code>union_d</code> is <code>0.60</code> and its 95% confidence interval is <code>[-2.03, 3.21]</code>. Therefore, the point estimate of the difference in the conditional expectations of <code>trudeau_therm_cps</code> between those who belong to the unions and those who don’t, holding other variables in the model constant, is <code>0.60</code> and its 95% confidence interval is <code>[-2.03, 3.21]</code>.</p>
+<p>Since <strong>this confidence interval</strong> <span class="red-text">includes zero</span>, this is <span class="red-text">inconclusive evidence</span> about whether there is any relationship between <code>trudeau_therm_cps</code> and <code>union_d</code> controlling for other variables. While it is <span class="red-text">inconclusive whether there is any positive or negative relationship</span>, we can still say from this estimation result that even if there is either a positive or negative relationship between them, it is <span class="red-text">likely to be small</span>, because the lowest end of the 95% confidence interval is only <span class="math inline">\(-2.03\)</span> and the highest end is only <span class="math inline">\(3.21\)</span>. Given that the range of <code>trudeau_therm_cps</code> is between 0 and 100, and the responses are spread over the entire range of this variable, these numbers (<span class="math inline">\(-2.03\)</span> and <span class="math inline">\(3.21\)</span>) seem to indicate <span class="red-text">a very small magnitude of the difference</span> between uion members and non-members.</p>
+</section>
+<section id="sec-subsig-nominal" class="level3" data-number="9.3.4">
+<h3 data-number="9.3.4" class="anchored" data-anchor-id="sec-subsig-nominal"><span class="header-section-number">9.3.4</span> Nominal Categorical Variable (<code>factor</code>)</h3>
+<p>If the independent variable of interest <span class="math inline">\(X\)</span> is <strong>a nominal categorical variable</strong>, the variable should be <strong>dummified</strong> on the right-hand side of a linear regression model. Review <a href="multi_linreg.html#sec-dum-ocat-ind" class="quarto-xref"><span>Section 7.3</span></a> and <a href="multi_linreg.html#sec-dum-ncat-ind-a" class="quarto-xref"><span>Section 7.5</span></a> for detail. For <strong>a nominal categorical variable</strong>, a meaningful amount of change may be <span class="red-text">some substantively/theoretically meaningful comparison of the categories</span>.</p>
+<p>Consider <code>province</code> included in the multiple linear regression estimated in <a href="#sec-subsig-ex-model" class="quarto-xref"><span>Section 9.1.3</span></a>. As we saw in <a href="multi_linreg.html#sec-dum-ocat-ind" class="quarto-xref"><span>Section 7.3</span></a> and <a href="multi_linreg.html#sec-dum-ncat-ind-a" class="quarto-xref"><span>Section 7.5</span></a>, <strong>the coefficient on each dummified variable</strong> represents the difference between <span class="math inline">\(E(Y|X,Z^+)\)</span> of <strong>the dummified category</strong> and <span class="math inline">\(E(Y|X,Z^+)\)</span> of <strong>the reference category</strong>, controlling for other variables included in the model. Therefore, if <span class="red-text">a meaningful comparison</span> of the categories is between <strong>a certain category</strong> and <strong>the reference category</strong>, we can estimate the difference in <span class="math inline">\(E(Y|X,Z^+)\)</span> <span class="red-text">immediately from</span> <strong>the coefficient on the dummy variable</strong> for this category.</p>
+<p>On the other hand, if <span class="red-text">a meaningful comparison</span> of the categories is <span class="red-text">between</span> <strong>certain categories other than the reference category</strong>, we need to estimate <span class="red-text">the difference</span> in <span class="math inline">\(E(Y|X,Z^+)\)</span> <span class="red-text">between</span> <strong>these categories</strong> using <strong>the <code>emmeans()</code> and the <code>contrast()</code> functions</strong>.</p>
+<p>Suppose we posit that <span class="red-text">a meaningful comparison</span> is between <strong>Ontario</strong> and <strong>Saskatchewan</strong>. The choice like this, of course, needs to be justified. For example, we may argue that it is meaningful to compare a relatively urban province and a relatively rural province because urban areas tend to be more liberal while rural areas tend to be more conservative in developed democracies, and Ontario is more urban than Saskatchewan because the biggest urban areas in Canada can be found in Ontario, and a larger proportion of the population live in rural areas in Saskatchwan than in Ontario. Since both categories are <span class="red-text">not</span> <strong>the reference category</strong>, we should <span class="red-text">specify both categories</span> in <strong>the <code>at</code> argument</strong> in <strong>the <code>emmeans()</code> function</strong> as below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>  model <span class="sc">|&gt;</span>   </span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>      <span class="fu">emmeans</span>( <span class="at">specs =</span> <span class="st">"province"</span>,  </span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>               <span class="at">at =</span> <span class="fu">list</span>( <span class="at">province =</span> <span class="fu">c</span>(<span class="st">"ON"</span>,<span class="st">"SK"</span>) ) ) <span class="sc">|&gt;</span> </span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>              <span class="co"># Comparison is between "ON" and "SK."</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">contrast</span>( <span class="at">method =</span> <span class="st">"pairwise"</span>, <span class="at">infer =</span> <span class="cn">TRUE</span> ) <span class="sc">|&gt;</span> </span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">summary</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">print</span>( <span class="at">digits =</span> <span class="dv">4</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> contrast estimate   SE   df lower.CL upper.CL t.ratio p.value
+ ON - SK      11.9 2.45 2333    7.092     16.7   4.855  &lt;.0001
+
+Results are averaged over the levels of: union_d 
+Confidence level used: 0.95 </code></pre>
+</div>
+</div>
+<p>According to this result, the estimated difference in the conditional expectation of <code>trudeau_therm_cps</code> between <strong>Ontario</strong> and <strong>Saskatchewan</strong> is <span class="math inline">\(11.90\)</span> and its 95% confidence interval is <code>[7.09, 16.70]</code>.</p>
+<p>Alternatively, suppose we posit that <span class="red-text">a meaningful comparison</span> is between <strong>Ontario</strong> and <strong>Alberta</strong>. Because <strong>Alberta</strong> is <strong>the <span class="red-text">reference</span> category</strong> of <code>province</code>, the difference in the conditional expectation of <code>trudeau_therm_cps</code> between <strong>Ontario</strong> and <strong>Alberta</strong> is the same as <strong>the coefficient on the dummy variable for Ontario</strong> (<code>provinceON</code>). According to the linear regression table reported in <a href="#sec-subsig-ex-model" class="quarto-xref"><span>Section 9.1.3</span></a>, this difference or the coefficient of <code>provinceON</code> is <span class="math inline">\(15.34\)</span>, and its 95% confidence interval is <code>[10.70, 19.98]</code>.</p>
+<!-- ```{r} -->
+<!--   model |>    -->
+<!--       emmeans( specs = "province" ) |>  -->
+<!--       contrast( method = "revpairwise", infer = TRUE ) |>  -->
+<!--       summary() |>  -->
+<!--       print( digits = 4 ) -->
+<!-- ``` -->
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Review the lecture materials for more details about <span class="red-text">“statistical significance.”</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>It is possible that the estimated relationship seems relatively small in magnitude yet still substantively significant/important depending on its specific context. For example, suppose the magnitude of impact of a certain factor in local elections is found to be only about 10 votes, which seems very small, but if the number of votes needed to win an election is very small and turnout is low, even 10 votes could be decisive about who wins a race. In this case, although the magnitude of the impact seems relatively small, it is <span class="red-text">still <strong>meaningfully</strong> large</span> in this particular context.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><code>c(0:10)</code> produces a vector of consecutive numbers (integers) from <code>1</code> to <code>10</code>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./linreg_inf.html" class="pagination-link" aria-label="Statistical Inference for Linear Regression">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Statistical Inference for Linear Regression</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
